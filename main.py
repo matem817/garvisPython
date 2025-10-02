@@ -24,6 +24,16 @@ async def buongiorno_handler(message: aio_types.message):
     await message.answer(text)
     print(f"{message.chat.id} << \n{text}\n----------ENDMSG----------")
 
+@dispatcher.message(aio_filters.Command(commands="orarioDomani"))
+async def orario_domani_handler(message: aio_types.message):
+    print(f"{message.chat.id} >> \n{message.text}\n----------ENDMSG----------")
+    today = (datetime.datetime.today().weekday() + 1) % 7
+    classes = orario.get_for_day(today)
+    text = f"L'orario di domani sarà:\n{classes}"
+
+    await message.answer(text)
+    print(f"{message.chat.id} << \n{text}\n----------ENDMSG----------")
+
 @dispatcher.message()
 async def message_handler(message: aio_types.message):
     print(f"{message.chat.id} >> \n{message.text}\n----------ENDMSG----------")
