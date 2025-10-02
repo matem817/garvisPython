@@ -1,0 +1,46 @@
+{
+  "lun": {
+    "1": "Meccarelli E.",
+    "2": "Meccarelli E. - Caprini D.",
+    "3": "Guiso M.",
+    "4": "Secchi D.",
+    "5": "Maloccu R."
+  },
+  "mar": {
+    "1": "Mecarelli E.",
+    "2": "Gungui P.",
+    "3": "Motzo G.",
+    "4": "Virdis A.",
+    "5": "Loi G. - Zidda D. B.",
+    "6": "Loi G. - Zidda D. B."
+  },
+  "mer": {
+    "1": "Guria M.",
+    "2": "Motzo G.",
+    "3": "Mecarelli E.",
+    "4": "Loi G.",
+    "5": "Guria M.",
+    "6": "Virdis A."
+  },
+  "gio": {
+    "1": "Gungui P.",
+    "2": "Mecarelli E. - Caprini D.",
+    "3": "Mecarelli E. - Caprini D.",
+    "4": "Motzo G.",
+    "5": "Maloccu R.",
+    "6": "Maloccu R."
+  },
+  "ven": {
+    "1": "Lillo R.",
+    "2": "Lillo R.",
+    "3": "Guiso M. - Fadda A.",
+    "4": "Maloccu R."
+  },
+  "sab": {
+    "1": "Gungui P.",
+    "2": "Gungui P.",
+    "3": "Guiso M.",
+    "4": "Guria M. - Fadda A.",
+    "5": "Guria M. - Fadda A."
+  }
+}
