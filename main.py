@@ -1,12 +1,12 @@
 import logging
-
 import aiogram
 import sys
 import asyncio
 from aiogram.client.session.aiohttp import AiohttpSession
 import aiogram.types as aio_types
 import aiogram.filters as aio_filters
-
+import datetime
+import orario
 
 ownerChatId = sys.argv[2]
 
@@ -17,8 +17,9 @@ dispatcher = aiogram.Dispatcher()
 @dispatcher.message(aio_filters.Command(commands="buongiorno"))
 async def buongiorno_handler(message: aio_types.message):
     print(f"{message.chat.id} >> \n{message.text}\n----------ENDMSG----------")
-
-    text = ""
+    today = datetime.datetime.today().weekday()
+    classes = orario.get_for_day(today)
+    text = f"L'orario di oggi è:\n{classes}"
 
     await message.answer(text)
     print(f"{message.chat.id} << \n{text}\n----------ENDMSG----------")
