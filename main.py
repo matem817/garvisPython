@@ -9,7 +9,7 @@ import datetime
 import orario
 
 ownerChatId = 6089716018
-botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo 6089716018"
+botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo"
 
 session = AiohttpSession()
 
@@ -25,7 +25,7 @@ async def buongiorno_handler(message: aio_types.message):
     await message.answer(text)
     print(f"{message.chat.id} << \n{text}\n----------ENDMSG----------")
 
-@dispatcher.message(aio_filters.Command(commands="orarioDomani"))
+@dispatcher.message(aio_filters.Command(commands="orariodomani"))
 async def orario_domani_handler(message: aio_types.message):
     print(f"{message.chat.id} >> \n{message.text}\n----------ENDMSG----------")
     today = (datetime.datetime.today().weekday() + 1) % 7
