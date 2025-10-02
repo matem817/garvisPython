@@ -5,6 +5,7 @@ import sys
 import asyncio
 from aiogram.client.session.aiohttp import AiohttpSession
 import aiogram.types as aio_types
+import aiogram.filters as aio_filters
 
 
 ownerChatId = sys.argv[2]
@@ -13,9 +14,14 @@ session = AiohttpSession()
 
 dispatcher = aiogram.Dispatcher()
 
-def send_message(chat_id, text):
-    asyncio.run(bot.send_message(chat_id,text))
-    print(f"{chat_id} << {text}\n")
+@dispatcher.message(aio_filters.Command(commands="buongiorno"))
+async def buongiorno_handler(message: aio_types.message):
+    print(f"{message.chat.id} >> \n{message.text}\n----------ENDMSG----------")
+
+    text = ""
+
+    await message.answer(text)
+    print(f"{message.chat.id} << \n{text}\n----------ENDMSG----------")
 
 @dispatcher.message()
 async def message_handler(message: aio_types.message):
