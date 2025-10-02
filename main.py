@@ -8,7 +8,8 @@ import aiogram.filters as aio_filters
 import datetime
 import orario
 
-ownerChatId = sys.argv[2]
+ownerChatId = 6089716018
+botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo 6089716018"
 
 session = AiohttpSession()
 
@@ -48,7 +49,7 @@ async def message_handler(message: aio_types.message):
 
 
 async def main() -> None:
-    bot = aiogram.Bot(sys.argv[1], session=session)
+    bot = aiogram.Bot(botToken, session=session)
     await dispatcher.start_polling(bot)
 
 
