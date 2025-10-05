@@ -47,8 +47,9 @@ async def command_handler(message: aio_types.message):
 
     elif user_message == ADMINGETLOGS:
         if message.chat.id == OWNERID:
+            logs = FSInputFile("resources/garvisLog.log")
             logging.info(f"DOCUMENT SENT:\n{userinfo} << \n resources/garvisLog.log \n----------ENDMSG----------\n")
-            message.answer_document(FSInputFile("resources/garvisLog.log"))
+            await message.answer_document(logs)
         else:
             message.answer("Non hai i permessi necessari, X-x")
             logging.warn(f"{userinfo} tried {ADMINGETLOGS}")
