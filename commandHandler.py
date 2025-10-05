@@ -52,6 +52,7 @@ async def command_handler(message: aio_types.message):
         else:
             message.answer("Non hai i permessi necessari, X-x")
             logging.warn(f"{userinfo} tried {ADMINGETLOGS}")
+        return
 
     else:
         text = (
