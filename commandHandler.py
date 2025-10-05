@@ -23,7 +23,7 @@ async def command_handler(message: aio_types.message):
 
     today = datetime.datetime.today().weekday()
 
-    logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{user_message}\n----------ENDMSG----------")
+    logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{user_message}\n")
 
     if  user_message == HELPCOMMAND or user_message == STARTCOMMAND:
         text = (f"Ciao {user_fullname}!\n"
@@ -48,7 +48,7 @@ async def command_handler(message: aio_types.message):
             "/help"
         )
 
-    logging.info(f"MESSAGE SENT:\n{userinfo} << \n{text}\n----------ENDMSG----------")
+    logging.info(f"MESSAGE SENT:\n{userinfo} << \n{text}\n----------ENDMSG----------\n")
     await message.answer(text)
 
 
