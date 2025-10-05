@@ -1,5 +1,7 @@
 import datetime
 import aiogram.types as aio_types
+from aiogram.types import FSInputFile
+
 import orario
 import logging
 
@@ -7,6 +9,8 @@ HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
 TOMORROWCLASSES = "/orariodomani"
 STARTCOMMAND = "/start"
+ADMINGETLOGS = "/getlogs"
+OWNERID = 6089716018
 
 logger = logging.getLogger(__name__)
 
@@ -40,6 +44,14 @@ async def command_handler(message: aio_types.message):
     elif user_message == TOMORROWCLASSES:
         classes = orario.get_for_day((today + 1)%7)
         text = f"Ciao {user_name}!\nL'orario di domani sarà:\n{classes}"
+
+    elif user_message == ADMINGETLOGS:
+        if message.chat.id == OWNERID:
+            logging.info(f"DOCUMENT SENT:\n{userinfo} << \n resources/garvisLog.log \n----------ENDMSG----------\n")
+            message.answer_document(FSInputFile("resources/garvisLog.log"))
+        else:
+            message.answer("Non hai i permessi necessari, X-x")
+            logging.warn(f"{userinfo} tried {ADMINGETLOGS}")
 
     else:
         text = (
