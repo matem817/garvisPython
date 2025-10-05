@@ -1,11 +1,11 @@
 import logging
-import aiogram
 import sys
+import aiogram
 import asyncio
 from aiogram.client.session.aiohttp import AiohttpSession
 import aiogram.types as aio_types
-import aiogram.filters as aio_filters
-from commandHandler import command_handler, HELPCOMMAND, TODAYCLASSES, TOMORROWCLASSES
+from commandHandler import command_handler
+
 
 ownerChatId = 6089716018
 botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo"
@@ -26,5 +26,12 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO, stream=sys.stdout, format='%(asctime)s | %(filename)s | %(levelname)s: %(message)s')
+    logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s | %(filename)s | %(levelname)s: %(message)s',
+                        handlers = [
+                            logging.StreamHandler(sys.stdout),  # Log su stdout
+                            logging.FileHandler("resources/garvisLog.log", mode="a", encoding="utf-8")  # Log su file
+                        ]
+                        )
+
     asyncio.run(main())
