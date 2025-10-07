@@ -65,7 +65,3 @@ async def command_handler(message: aio_types.message):
     logging.info(f"MESSAGE SENT:\n{userinfo} << \n{text}\n----------ENDMSG----------\n")
     await message.answer(text)
 
-
-
-
-
