@@ -4,7 +4,7 @@ import aiogram
 import asyncio
 from aiogram.client.session.aiohttp import AiohttpSession
 import aiogram.types as aio_types
-from commandHandler import command_handler
+from botScripts.commandHandler import command_handler
 
 
 ownerChatId = 6089716018
@@ -30,7 +30,7 @@ if __name__ == "__main__":
                         format='%(asctime)s | %(filename)s | %(levelname)s: %(message)s',
                         handlers = [
                             logging.StreamHandler(sys.stdout),  # Log su stdout
-                            logging.FileHandler("resources/garvisLog.log", mode="a", encoding="utf-8")  # Log su file
+                            logging.FileHandler("resources/garvisLog.log", mode="a", encoding="utf-8")
                         ]
                         )
 
