@@ -36,7 +36,7 @@ async def command_handler(message: aio_types.message):
     user_message = first_token.split("@", 1)[0]
     user_fullname = message.chat.full_name
     user_name = message.chat.first_name
-    userinfo = f"{user_fullname}({message.chat.id})[{userClass or "None"}]"
+    userinfo = f"{user_fullname}({message.chat.id})[{userClass or None}]"
 
     today = datetime.datetime.today().weekday()
 
