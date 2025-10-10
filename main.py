@@ -8,8 +8,8 @@ from botScripts.commandHandler import command_handler
 
 
 ownerChatId = 6089716018
-#botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo"
-botToken = "8459775452:AAE7emkEPkNr6tGZLeeJA0hdeQB40q5IwGI"
+
+botToken = input("Inserisci token del bot:")
 
 session = AiohttpSession()
 
