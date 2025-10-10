@@ -1,9 +1,3 @@
-"""
-TODO:
-    make it chek class if is supported (is in database)
-
-"""
-
 import datetime
 
 import aiogram.types as aio_types
