@@ -8,7 +8,8 @@ from botScripts.commandHandler import command_handler
 
 
 ownerChatId = 6089716018
-botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo"
+#botToken = "7978317162:AAH3Wgzjs8f2egRCiKcqU6cXkNL8vzTYogo"
+botToken = "8459775452:AAE7emkEPkNr6tGZLeeJA0hdeQB40q5IwGI"
 
 session = AiohttpSession()
 
@@ -26,7 +27,7 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO,
+    logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s | %(filename)s | %(levelname)s: %(message)s',
                         handlers = [
                             logging.StreamHandler(sys.stdout),  # Log su stdout

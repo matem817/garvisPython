@@ -1,50 +1,92 @@
+"""
+TODO:
+    make it chek class if is supported (is in database)
+
+"""
+
 import datetime
+
 import aiogram.types as aio_types
 from aiogram.types import FSInputFile
 
-import orario
+import botScripts.orario as orario
 import logging
+
+from botScripts.dataHandler import DataHandler, is_class_supported
+
+VERSION = "0.2.0beta"
+OWNERID = 6089716018
+
 
 HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
 TOMORROWCLASSES = "/orariodomani"
 STARTCOMMAND = "/start"
 ADMINGETLOGS = "/getlogs"
-OWNERID = 6089716018
+SETCLASS = "/ic"
+
+GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES]
 
 logger = logging.getLogger(__name__)
+
+dH = DataHandler()
+getClass = dH.get_user_class
 
 
 async def command_handler(message: aio_types.message):
 
     raw = message.text or ""
     raw = raw.strip().lower()
-    first_token = raw.split(maxsplit=1)[0]  # "/help@MyBot" oppure "/help"
+    first_token = raw.split()[0]  # "/help@MyBot" oppure "/help"
+    userClass = dH.get_user_class(message.chat.id)
     user_message = first_token.split("@", 1)[0]
     user_fullname = message.chat.full_name
     user_name = message.chat.first_name
-    userinfo = f"{user_fullname}({message.chat.id})"
+    userinfo = f"{user_fullname}({message.chat.id})[{userClass or "None"}]"
 
     today = datetime.datetime.today().weekday()
 
     logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{user_message}\n")
 
-    if  user_message == HELPCOMMAND or user_message == STARTCOMMAND:
+    commandArgs = raw.split()
+
+    logging.debug(commandArgs)
+
+    # Se l'utente ha eseguito /ic
+    if user_message == SETCLASS:
+        if len(commandArgs) != 2:
+            text=(
+                f"Sembra che tu non abbia inserito il comando correttamente. .-.\n"
+                f"Andrebbe scritto così: {SETCLASS} 3C\n"
+                f"Ti consiglio di scriverlo a mano!\n"
+            )
+        else:
+            userClass_ = commandArgs[1]
+            userClassCharList = list(userClass_)
+
+            logging.debug(userClassCharList)
+
+            if userClassCharList[0].isnumeric() and not userClassCharList[1].isnumeric() :
+                userClass_ = userClassCharList[0] + userClassCharList[1]
+                text= f"Ok! La tua classe è stata impostata su {userClass_}\n"
+                logging.info(f"{userinfo} class has been set to {userClass_}")
+                dH.set_user_class(message.chat.id, userClass_)
+            else:
+                text= f"Sembra che tu abbia inserito un valore non valido :/\n"
+
+    # Se l'utente ha eseguito /start o /help
+    elif  user_message == HELPCOMMAND or user_message == STARTCOMMAND:
         text = (f"Ciao {user_fullname}!\n"
                 f"Io sono Garvis, un bot ideato e programmato da Cristian (@matem817)\n"
                 f"I comandi che supporto sono:\n"
                 f"{HELPCOMMAND} : mostra questo messaggio\n"
                 f"{TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n"
-                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n")
+                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n"
+                f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
+                f"Andrebbe usato così: {SETCLASS} <la tua classe>\n"
+                f"Attualmente la versione del mio codice è {VERSION}")
 
-    elif user_message == TODAYCLASSES:
-        classes = orario.get_for_day(today)
-        text = f"Buongiorno {user_name}! :D\nL'orario di oggi è:\n{classes}"
-
-    elif user_message == TOMORROWCLASSES:
-        classes = orario.get_for_day((today + 1)%7)
-        text = f"Ciao {user_name}!\nL'orario di domani sarà:\n{classes}"
-
+    # Se l'utente chiede i logs (/getlogs)
     elif user_message == ADMINGETLOGS:
         if message.chat.id == OWNERID:
             logs = FSInputFile("resources/garvisLog.log")
@@ -52,9 +94,30 @@ async def command_handler(message: aio_types.message):
             await message.answer_document(logs)
         else:
             message.answer("Non hai i permessi necessari, X-x")
-            logging.warn(f"{userinfo} tried {ADMINGETLOGS}")
+            logging.warning(f"{userinfo} tried {ADMINGETLOGS}")
         return
+    # Se l'utente non ha una classe assegnata e ha provato a eseguire un comando che lo richiede
+    elif not userClass and (user_message in GETCLASSESCOMANDS):
+        text=(f"Uff....\n"                                      
+              f"Non riesco a trovare a che classe fai parte O.o\n"
+              f"fai {SETCLASS} seguito dalla tua classe per impostarla\n")
 
+    # Se la classe del utente è supportata E ha eseguito un comando in GETCLASSESCOMMAND
+    elif not is_class_supported(userClass) and (user_message in GETCLASSESCOMANDS):
+        text = (f"Scusa ma non ho l'orario per la tua classe.\n"
+                f" Manda un messaggio a Cristian(@matem817) per aggiungerla!")
+
+    # Se l'utente chiede l'orario del giorno
+    elif user_message == TODAYCLASSES:
+        classes = orario.get_for_day(userClass,today)
+        text = f"Buongiorno {user_name}! :D\nL'orario di oggi è:\n{classes}"
+
+    # Se l'utente chiede l'orario del giorno dopo
+    elif user_message == TOMORROWCLASSES:
+        classes = orario.get_for_day(userClass,(today + 1)%7)
+        text = f"Ciao {user_name}!\nL'orario di domani sarà:\n{classes}"
+
+    # Se l'utente ha scritto gibberish
     else:
         text = (
             "Scusami ma non supporto messaggi al di fuori di comandi x_x\n"

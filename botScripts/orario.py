@@ -6,8 +6,10 @@ weekDay = ["lun","mar","mer","gio","ven", "sab","dom"]
 with open("resources/orario.json") as f:
     orarioJson = json.loads(f.read())
 
-def get_for_day(day=0):
-    orario = orarioJson[weekDay[day]]
+
+def get_for_day(class_, day):
+    classjson = orarioJson[class_]
+    orario = classjson[weekDay[day]]
     out = ""
     for i in orario:
         out += f"   {i}:{orario[i]}\n"
