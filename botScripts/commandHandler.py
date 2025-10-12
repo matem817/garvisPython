@@ -10,8 +10,6 @@ from botScripts.dataHandler import DataHandler, is_class_supported
 
 VERSION = "0.2.0beta"
 OWNERID = 6089716018
-
-
 HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
 TOMORROWCLASSES = "/orariodomani"
@@ -19,7 +17,6 @@ STARTCOMMAND = "/start"
 ADMINGETLOGS = "/getlogs"
 SETCLASS = "/ic"
 GETCLASSESFORDAY = "/orarioper"
-
 GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
 
 logger = logging.getLogger(__name__)
@@ -127,7 +124,7 @@ async def command_handler(message: aio_types.Message):
 
         else:
             text = (f"La sintassi del comando sembra essere sbagliata. x-x\n"
-                    f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer....>\n"
+                    f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer...>\n"
                     f"es.: {GETCLASSESFORDAY} lun\n")
 
     # Se l'utente ha scritto gibberish
