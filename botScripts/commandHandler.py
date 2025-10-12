@@ -89,7 +89,7 @@ async def command_handler(message: aio_types.Message):
             logging.info(f"DOCUMENT SENT:\n{userinfo} << \n resources/garvisLog.log \n----------ENDMSG----------\n")
             await message.answer_document(logs)
         else:
-            message.answer("Non hai i permessi necessari, X-x")
+            await message.answer("Non hai i permessi necessari, X-x")
             logging.warning(f"{userinfo} tried {ADMINGETLOGS}")
         return
     # Se l'utente non ha una classe assegnata e ha provato a eseguire un comando che lo richiede
