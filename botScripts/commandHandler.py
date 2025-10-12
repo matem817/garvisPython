@@ -8,7 +8,7 @@ import logging
 
 from botScripts.dataHandler import DataHandler, is_class_supported
 
-VERSION = "0.2.0beta"
+VERSION = "0.3.0beta"
 OWNERID = 6089716018
 HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
@@ -70,11 +70,14 @@ async def command_handler(message: aio_types.Message):
         text = (f"Ciao {user_fullname}!\n"
                 f"Io sono Garvis, un bot ideato e programmato da Cristian (@matem817)\n"
                 f"I comandi che supporto sono:\n"
-                f"{HELPCOMMAND} : mostra questo messaggio\n"
-                f"{TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n"
-                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n"
+                f"{HELPCOMMAND} : mostra questo messaggio\n\n"
+                f"{TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n\n"
+                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n\n"
+                f"{GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
+                f"i giorni vanno abbreviati alle loro prime 3 lettere.\n"
+                f"Es. {GETCLASSESFORDAY} lun\n\n"
                 f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
-                f"Andrebbe usato così: {SETCLASS} <la tua classe>\n"
+                f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
                 f"Attualmente la versione del mio codice è {VERSION}")
 
     # Se l'utente chiede i logs (/getlogs)
