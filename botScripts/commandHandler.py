@@ -20,7 +20,7 @@ ADMINGETLOGS = "/getlogs"
 SETCLASS = "/ic"
 GETCLASSESFORDAY = "/orarioper"
 
-GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES]
+GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +28,8 @@ dH = DataHandler()
 getClass = dH.get_user_class
 
 
-async def command_handler(message: aio_types.message):
+async def command_handler(message: aio_types.Message):
+
 
     raw = message.text or ""
     raw = raw.strip().lower()
