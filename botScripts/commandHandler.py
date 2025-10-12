@@ -18,6 +18,7 @@ TOMORROWCLASSES = "/orariodomani"
 STARTCOMMAND = "/start"
 ADMINGETLOGS = "/getlogs"
 SETCLASS = "/ic"
+GETCLASSESFORDAY = "/orarioper"
 
 GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES]
 
@@ -110,6 +111,24 @@ async def command_handler(message: aio_types.message):
     elif user_message == TOMORROWCLASSES:
         classes = orario.get_for_day(userClass,(today + 1)%7)
         text = f"Ciao {user_name}!\nL'orario di domani sarà:\n{classes}"
+
+    # Se l'utente chiede l'orario per un giorno specifico
+    elif user_message == GETCLASSESFORDAY:
+        if len(commandArgs) > 1:
+            day = commandArgs[1]
+            dayNum, fullDayName = orario.get_day_from_string(day)
+            if  dayNum != -1:
+                text = (f"L'orario per {fullDayName} è:\n"
+                        f"{orario.get_for_day(userClass, dayNum)}")
+            else:
+                text = (f"Il giorno inserito non sembra essere valido. u.u\n"
+                        f"I giorni della settimana vanno abbreviati alle prime 3 lettere. :3\n")
+
+
+        else:
+            text = (f"La sintassi del comando sembra essere sbagliata. x-x\n"
+                    f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer....>\n"
+                    f"es.: {GETCLASSESFORDAY} lun\n")
 
     # Se l'utente ha scritto gibberish
     else:
