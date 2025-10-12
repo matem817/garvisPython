@@ -8,18 +8,16 @@ import logging
 
 from botScripts.dataHandler import DataHandler, is_class_supported
 
-VERSION = "0.2.0beta"
+VERSION = "0.3.0beta"
 OWNERID = 6089716018
-
-
 HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
 TOMORROWCLASSES = "/orariodomani"
 STARTCOMMAND = "/start"
 ADMINGETLOGS = "/getlogs"
 SETCLASS = "/ic"
-
-GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES]
+GETCLASSESFORDAY = "/orarioper"
+GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
 
 logger = logging.getLogger(__name__)
 
@@ -27,24 +25,23 @@ dH = DataHandler()
 getClass = dH.get_user_class
 
 
-async def command_handler(message: aio_types.message):
+async def command_handler(message: aio_types.Message):
 
-    raw = message.text or ""
-    raw = raw.strip().lower()
-    first_token = raw.split()[0]  # "/help@MyBot" oppure "/help"
-    userClass = dH.get_user_class(message.chat.id)
+
+    raw = (message.text or "").strip().lower()
+    commandArgs = raw.split()
+
+    first_token = commandArgs[0]  # "/help@MyBot" oppure "/help"
     user_message = first_token.split("@", 1)[0]
+
     user_fullname = message.chat.full_name
     user_name = message.chat.first_name
+    userClass = dH.get_user_class(message.chat.id)
     userinfo = f"{user_fullname}({message.chat.id})[{userClass or None}]"
 
     today = datetime.datetime.today().weekday()
 
-    logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{user_message}\n")
-
-    commandArgs = raw.split()
-
-    logging.debug(commandArgs)
+    logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{commandArgs}\n")
 
     # Se l'utente ha eseguito /ic
     if user_message == SETCLASS:
@@ -73,11 +70,14 @@ async def command_handler(message: aio_types.message):
         text = (f"Ciao {user_fullname}!\n"
                 f"Io sono Garvis, un bot ideato e programmato da Cristian (@matem817)\n"
                 f"I comandi che supporto sono:\n"
-                f"{HELPCOMMAND} : mostra questo messaggio\n"
-                f"{TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n"
-                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n"
+                f"{HELPCOMMAND} : mostra questo messaggio\n\n"
+                f"{TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n\n"
+                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n\n"
+                f"{GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
+                f"i giorni vanno abbreviati alle loro prime 3 lettere.\n"
+                f"Es. {GETCLASSESFORDAY} lun\n\n"
                 f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
-                f"Andrebbe usato così: {SETCLASS} <la tua classe>\n"
+                f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
                 f"Attualmente la versione del mio codice è {VERSION}")
 
     # Se l'utente chiede i logs (/getlogs)
@@ -87,9 +87,10 @@ async def command_handler(message: aio_types.message):
             logging.info(f"DOCUMENT SENT:\n{userinfo} << \n resources/garvisLog.log \n----------ENDMSG----------\n")
             await message.answer_document(logs)
         else:
-            message.answer("Non hai i permessi necessari, X-x")
+            await message.answer("Non hai i permessi necessari, X-x")
             logging.warning(f"{userinfo} tried {ADMINGETLOGS}")
         return
+
     # Se l'utente non ha una classe assegnata e ha provato a eseguire un comando che lo richiede
     elif not userClass and (user_message in GETCLASSESCOMANDS):
         text=(f"Uff....\n"                                      
@@ -110,6 +111,24 @@ async def command_handler(message: aio_types.message):
     elif user_message == TOMORROWCLASSES:
         classes = orario.get_for_day(userClass,(today + 1)%7)
         text = f"Ciao {user_name}!\nL'orario di domani sarà:\n{classes}"
+
+    # Se l'utente chiede l'orario per un giorno specifico
+    elif user_message == GETCLASSESFORDAY:
+        if len(commandArgs) > 1:
+            day = commandArgs[1]
+            dayNum, fullDayName = orario.get_day_from_string(day)
+            if  dayNum != -1:
+                text = (f"L'orario per {fullDayName} è:\n"
+                        f"{orario.get_for_day(userClass, dayNum)}")
+            else:
+                text = (f"Il giorno inserito non sembra essere valido. u.u\n"
+                        f"I giorni della settimana vanno abbreviati alle prime 3 lettere. :3\n")
+
+
+        else:
+            text = (f"La sintassi del comando sembra essere sbagliata. x-x\n"
+                    f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer...>\n"
+                    f"es.: {GETCLASSESFORDAY} lun\n")
 
     # Se l'utente ha scritto gibberish
     else:
