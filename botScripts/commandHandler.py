@@ -31,22 +31,20 @@ getClass = dH.get_user_class
 async def command_handler(message: aio_types.Message):
 
 
-    raw = message.text or ""
-    raw = raw.strip().lower()
-    first_token = raw.split()[0]  # "/help@MyBot" oppure "/help"
-    userClass = dH.get_user_class(message.chat.id)
+    raw = (message.text or "").strip().lower()
+    commandArgs = raw.split()
+
+    first_token = commandArgs[0]  # "/help@MyBot" oppure "/help"
     user_message = first_token.split("@", 1)[0]
+
     user_fullname = message.chat.full_name
     user_name = message.chat.first_name
+    userClass = dH.get_user_class(message.chat.id)
     userinfo = f"{user_fullname}({message.chat.id})[{userClass or None}]"
 
     today = datetime.datetime.today().weekday()
 
-    logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{user_message}\n")
-
-    commandArgs = raw.split()
-
-    logging.debug(commandArgs)
+    logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{commandArgs}\n")
 
     # Se l'utente ha eseguito /ic
     if user_message == SETCLASS:
@@ -92,6 +90,7 @@ async def command_handler(message: aio_types.Message):
             await message.answer("Non hai i permessi necessari, X-x")
             logging.warning(f"{userinfo} tried {ADMINGETLOGS}")
         return
+
     # Se l'utente non ha una classe assegnata e ha provato a eseguire un comando che lo richiede
     elif not userClass and (user_message in GETCLASSESCOMANDS):
         text=(f"Uff....\n"                                      
