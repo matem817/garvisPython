@@ -1,51 +1,1745 @@
 {
-  "3C": {
-    "lun": {
-      "1": "Meccarelli E.",
-      "2": "Meccarelli E. - Caprini D.",
-      "3": "Guiso M.",
-      "4": "Secchi D.",
-      "5": "Maloccu R."
-    },
-    "mar": {
-      "1": "Motzo G.",
-      "2": "Gungui P.",
-      "3": "Mecarelli E.",
-      "4": "Virdis A.",
-      "5": "Loi G. - Zidda D. B.",
-      "6": "Loi G. - Zidda D. B."
-    },
-    "mer": {
-      "1": "Guria M.",
-      "2": "Motzo G.",
-      "3": "Mecarelli E.",
-      "4": "Loi G.",
-      "5": "Guria M.",
-      "6": "Virdis A."
-    },
-    "gio": {
-      "1": "Gungui P.",
-      "2": "Mecarelli E. - Caprini D.",
-      "3": "Mecarelli E. - Caprini D.",
-      "4": "Motzo G.",
-      "5": "Maloccu R.",
-      "6": "Maloccu R."
-    },
-    "ven": {
-      "1": "Lillo R.",
-      "2": "Lillo R.",
-      "3": "Guiso M. - Fadda A.",
-      "4": "Maloccu R."
-    },
-    "sab": {
-      "1": "Gungui P.",
-      "2": "Gungui P.",
-      "3": "Guiso M.",
-      "4": "Guria M. - Fadda A.",
-      "5": "Guria M. - Fadda A."
-    },
-    "dom": {
-      "1": "Vai in chiesa"
-    }
-  }
+	"1^A": {
+		"lun": {
+			"1": "Murru B.",
+			"2": "Putzu G.",
+			"3": "Bullitta S.",
+			"4": "Nonne V. - Sanna M.",
+			"5": "Nonne V.",
+			"6": "Melis M."
+		},
+		"mar": {
+			"1": "Monni S.",
+			"2": "Melis M.",
+			"3": "Bullitta S.",
+			"4": "Murru B.",
+			"5": "Caboi M.",
+			"6": "Caboi M."
+		},
+		"mer": {
+			"1": "Pinna A.",
+			"2": "Monni S.",
+			"3": "Costa V.",
+			"4": "Pinna A. - Fadda G. D.",
+			"5": "Costa V."
+		},
+		"gio": {
+			"1": "Putzu G.",
+			"2": "Biscu A. - Garau G.",
+			"3": "Murru B.",
+			"4": "Murru B.",
+			"5": "Biscu A.",
+			"6": "Pinna A."
+		},
+		"ven": {
+			"1": "Putzu G.",
+			"2": "Biscu A.",
+			"3": "Melis M.",
+			"4": "Monni S.",
+			"5": "Nonne V. - Sanna M."
+		},
+		"sab": {
+			"1": "Murru B.",
+			"2": "Melis M.",
+			"3": "Costa V. - Ledda A.",
+			"4": "Floris M. A.",
+			"5": "Murru B."
+		}
+	},
+	"1^B": {
+		"lun": {
+			"1": "Bullitta S.",
+			"2": "Maloccu R.",
+			"3": "Maloccu R.",
+			"4": "Serra M.",
+			"5": "Pinna A. - Fadda G. D.",
+			"6": "Putzu G."
+		},
+		"mar": {
+			"1": "Canaj A.",
+			"2": "Costa V.",
+			"3": "Pinna A.",
+			"4": "Biscu A.",
+			"5": "Pinna A.",
+			"6": "Maloccu R."
+		},
+		"mer": {
+			"1": "Motzo G.",
+			"2": "Canaj A.",
+			"3": "Serra M. - Sanna M.",
+			"4": "Biscu A. - Garau G.",
+			"5": "Serra M. - Sanna M."
+		},
+		"gio": {
+			"1": "Canaj A.",
+			"2": "Canaj A.",
+			"3": "Lillo R.",
+			"4": "Lillo R.",
+			"5": "Putzu G.",
+			"6": "Motzo G."
+		},
+		"ven": {
+			"1": "Bullitta S.",
+			"2": "Putzu G.",
+			"3": "Costa V.",
+			"4": "Biscu A.",
+			"5": "Motzo G."
+		},
+		"sab": {
+			"1": "Maloccu R.",
+			"2": "Costa V. - Ledda A.",
+			"3": "Canaj A.",
+			"4": "Canaj A.",
+			"5": "Secchi D."
+		}
+	},
+	"1^C": {
+		"lun": {
+			"1": "Putzu G.",
+			"2": "Pinna A.",
+			"3": "Putzu G.",
+			"4": "Bullitta S.",
+			"5": "Caboi M.",
+			"6": "Caboi M."
+		},
+		"mar": {
+			"1": "Bussu P.",
+			"2": "Canaj A.",
+			"3": "Canaj A.",
+			"4": "Bullitta S.",
+			"5": "Biscu A."
+		},
+		"mer": {
+			"1": "Boi G.",
+			"2": "Boi G.",
+			"3": "Canaj A.",
+			"4": "Canaj A.",
+			"5": "Pinna A. - Fadda G. D.",
+			"6": "Serra M. - Sanna M."
+		},
+		"gio": {
+			"1": "Boi G.",
+			"2": "Pinna A.",
+			"3": "Putzu G.",
+			"4": "Costa V.",
+			"5": "Canaj A.",
+			"6": "Canaj A."
+		},
+		"ven": {
+			"1": "Costa V.",
+			"2": "Bussu P.",
+			"3": "Boi G.",
+			"4": "Serra M. - Sanna M.",
+			"5": "Biscu A."
+		},
+		"sab": {
+			"1": "Serra M.",
+			"2": "Secchi D.",
+			"3": "Bussu P.",
+			"4": "Costa V. - Ledda A.",
+			"5": "Biscu A. - Garau G."
+		}
+	},
+	"1^D": {
+		"lun": {
+			"1": "Deroma S.",
+			"2": "Virdis A.",
+			"3": "Virdis A.",
+			"4": "Guria M.",
+			"5": "Lai S."
+		},
+		"mar": {
+			"1": "Deroma S.",
+			"2": "Putzu G.",
+			"3": "Secchi D.",
+			"4": "Putzu G.",
+			"5": "Floris M.",
+			"6": "Floris M."
+		},
+		"mer": {
+			"1": "Boeddu G.",
+			"2": "Boeddu G.",
+			"3": "Lai S.",
+			"4": "Barrui A.",
+			"5": "Barrui A.",
+			"6": "Pisanu R."
+		},
+		"gio": {
+			"1": "Barrui A.",
+			"2": "Barrui A.",
+			"3": "Tronci F.",
+			"4": "Tronci F.",
+			"5": "Virdis A.",
+			"6": "Virdis A."
+		},
+		"ven": {
+			"1": "Pisanu R.",
+			"2": "Guria M.",
+			"3": "Bullitta S.",
+			"4": "Bullitta S."
+		},
+		"sab": {
+			"1": "Putzu G.",
+			"2": "Lai S.",
+			"3": "Pisanu R.",
+			"4": "Virdis A.",
+			"5": "Virdis A."
+		}
+	},
+	"1^E": {
+		"lun": {
+			"1": "Manca E.",
+			"2": "Cicalò I.",
+			"3": "Chisu L.",
+			"4": "Boeddu G.",
+			"5": "Tronci F.",
+			"6": "Tronci F."
+		},
+		"mar": {
+			"1": "Tocco D.",
+			"2": "Sanna S.",
+			"3": "Gungui P.",
+			"4": "Gungui P.",
+			"5": "Niedda F.",
+			"6": "Niedda F."
+		},
+		"mer": {
+			"1": "Sanna S.",
+			"2": "Sanna S.",
+			"3": "Gungui P.",
+			"4": "Orunesu M. G.",
+			"5": "Gungui P.",
+			"6": "Cicalò I."
+		},
+		"gio": {
+			"1": "Chisu L.",
+			"2": "Chisu L.",
+			"3": "Niedda F.",
+			"4": "Niedda F.",
+			"5": "Orunesu M. G.",
+			"6": "Manca E."
+		},
+		"ven": {
+			"1": "Manca E.",
+			"2": "Floris M. A.",
+			"3": "Boeddu G.",
+			"4": "Cicalò I.",
+			"5": "Gungui P.",
+			"6": "Gungui P."
+		},
+		"sab": {
+			"1": "Tocco D.",
+			"2": "Tocco D.",
+			"3": "Gungui P.",
+			"4": "Orunesu M. G."
+		}
+	},
+	"1^F": {
+		"lun": {
+			"1": "Boeddu G.",
+			"2": "Orunesu M. G.",
+			"3": "Sanna S.",
+			"4": "Sanna S.",
+			"5": "Floris M. A.",
+			"6": "Bagnaro P."
+		},
+		"mar": {
+			"1": "Niedda F.",
+			"2": "Niedda F.",
+			"3": "Sanna S.",
+			"4": "Tocco D.",
+			"5": "Spano P.",
+			"6": "Cicalò I."
+		},
+		"mer": {
+			"1": "Bagnaro P.",
+			"2": "Orunesu M. G.",
+			"3": "Spano P.",
+			"4": "Cicalò I.",
+			"5": "Spano P."
+		},
+		"gio": {
+			"1": "Bagnaro P.",
+			"2": "Spano P.",
+			"3": "Chisu L.",
+			"4": "Boeddu G.",
+			"5": "Tocco D.",
+			"6": "Tocco D."
+		},
+		"ven": {
+			"1": "Spano P.",
+			"2": "Cicalò I.",
+			"3": "Niedda F.",
+			"4": "Niedda F.",
+			"5": "Chisu L.",
+			"6": "Chisu L."
+		},
+		"sab": {
+			"1": "Spano P.",
+			"2": "Spano P.",
+			"3": "Davoli A.",
+			"4": "Davoli A.",
+			"5": "Orunesu M. G."
+		}
+	},
+	"1^G": {
+		"lun": {
+			"1": "Davoli A.",
+			"2": "Davoli A.",
+			"3": "Niedda F.",
+			"4": "Niedda F.",
+			"5": "Chisu L.",
+			"6": "Chisu L."
+		},
+		"mar": {
+			"1": "Cicalò I.",
+			"2": "Laria L.",
+			"3": "Corsi F.",
+			"4": "Cicalò I.",
+			"5": "Sanna S.",
+			"6": "Sanna S."
+		},
+		"mer": {
+			"1": "Niedda F.",
+			"2": "Niedda F.",
+			"3": "Sanna S.",
+			"4": "Tocco D.",
+			"5": "Cicalò I.",
+			"6": "Corsi F."
+		},
+		"gio": {
+			"1": "Boeddu G.",
+			"2": "Serra M. L.",
+			"3": "Boeddu G.",
+			"4": "Laria L.",
+			"5": "Laria L.",
+			"6": "Floris M. A."
+		},
+		"ven": {
+			"1": "Serra M. L.",
+			"2": "Corsi F.",
+			"3": "Chisu L.",
+			"4": "Laria L.",
+			"5": "Laria L."
+		},
+		"sab": {
+			"1": "Laria L.",
+			"2": "Laria L.",
+			"3": "Tocco D.",
+			"4": "Tocco D.",
+			"5": "Serra M. L."
+		}
+	},
+	"1^H": {
+		"lun": {
+			"1": "Pinna A.",
+			"2": "Mereu G.",
+			"3": "Nonne V. - Sanna M.",
+			"4": "Porqueddu R. (suppl. Seddone M.)",
+			"5": "Porqueddu R. (suppl. Seddone M.)"
+		},
+		"mar": {
+			"1": "Pinna A.",
+			"2": "Porqueddu R. (suppl. Seddone M.)",
+			"3": "Costa V.",
+			"4": "Mereu G.",
+			"5": "Bullitta S.",
+			"6": "Cidda C."
+		},
+		"mer": {
+			"1": "Mascherona A.",
+			"2": "Costa V.",
+			"3": "Pinna A. - Fadda G. D.",
+			"4": "Porqueddu R. (suppl. Seddone M.)",
+			"5": "Cidda C.",
+			"6": "Greco S. - Garau G."
+		},
+		"gio": {
+			"1": "Caboi M.",
+			"2": "Caboi M.",
+			"3": "Mereu G.",
+			"4": "Mascherona A.",
+			"5": "Mascherona A.",
+			"6": "Bullitta S."
+		},
+		"ven": {
+			"1": "Mereu G.",
+			"2": "Greco S.",
+			"3": "Greco S.",
+			"4": "Cidda C.",
+			"5": "Secchi D."
+		},
+		"sab": {
+			"1": "Costa V. - Ledda A.",
+			"2": "Porqueddu R. (suppl. Seddone M.)",
+			"3": "Porqueddu R. (suppl. Seddone M.)",
+			"4": "Nonne V.",
+			"5": "Nonne V. - Sanna M."
+		}
+	},
+	"1^I": {
+		"lun": {
+			"1": "Porqueddu R. (suppl. Seddone M.)",
+			"2": "Porqueddu R. (suppl. Seddone M.)",
+			"3": "Caboi M.",
+			"4": "Caboi M.",
+			"5": "Putzu G.",
+			"6": "Serra L. (suppl. Erca. M.)"
+		},
+		"mar": {
+			"1": "Serra L. (suppl. Erca. M.)",
+			"2": "Serra L. (suppl. Erca. M.)",
+			"3": "Paddeu G.",
+			"4": "Angioi A.",
+			"5": "Angioi A.",
+			"6": "Serra M."
+		},
+		"mer": {
+			"1": "Orunesu M. G.",
+			"2": "Porqueddu R. (suppl. Seddone M.)",
+			"3": "Porqueddu R. (suppl. Seddone M.)",
+			"4": "Serra M. - Sanna M.",
+			"5": "Paddeu G.",
+			"6": "Pinna A. - Fadda G. D."
+		},
+		"gio": {
+			"1": "Serra L. (suppl. Erca. M.)",
+			"2": "Paddeu G. - Ledda A.",
+			"3": "Angioi A. - Garau G.",
+			"4": "Orunesu M. G.",
+			"5": "Bullitta S.",
+			"6": "Putzu G."
+		},
+		"ven": {
+			"1": "Porqueddu R. (suppl. Seddone M.)",
+			"2": "Pinna A.",
+			"3": "Serra M. - Sanna M.",
+			"4": "Pinna A."
+		},
+		"sab": {
+			"1": "Porqueddu R. (suppl. Seddone M.)",
+			"2": "Orunesu M. G.",
+			"3": "Bullitta S.",
+			"4": "Secchi D.",
+			"5": "Putzu G."
+		}
+	},
+	"2^A": {
+		"lun": {
+			"1": "Maloccu R.",
+			"2": "Bullitta S.",
+			"3": "Angioi A.",
+			"4": "Murru B.",
+			"5": "Murru B.",
+			"6": "Pinna A. - Fadda G. D."
+		},
+		"mar": {
+			"1": "Boeddu G.",
+			"2": "Murru B.",
+			"3": "Murru B.",
+			"4": "Corsi F.",
+			"5": "Maloccu R.",
+			"6": "Angioi A."
+		},
+		"mer": {
+			"1": "Biscu A.",
+			"2": "Pinna A.",
+			"3": "Corsi F.",
+			"4": "Paddeu G.",
+			"5": "Angioi A."
+		},
+		"gio": {
+			"1": "Biscu A. - Garau G.",
+			"2": "Boeddu G.",
+			"3": "Caboi M.",
+			"4": "Caboi M.",
+			"5": "Paddeu G. - Ledda A.",
+			"6": "Murru B."
+		},
+		"ven": {
+			"1": "Pinna A.",
+			"2": "Paddeu G.",
+			"3": "Secchi D.",
+			"4": "Murru B."
+		},
+		"sab": {
+			"1": "Biscu A.",
+			"2": "Bullitta S.",
+			"3": "Maloccu R.",
+			"4": "Corsi F.",
+			"5": "Maloccu R."
+		}
+	},
+	"2^B": {
+		"lun": {
+			"1": "Lillo R.",
+			"2": "Lillo R.",
+			"3": "Mascherona A.",
+			"4": "Pinna A. - Fadda G. D.",
+			"5": "Serra M.",
+			"6": "Secchi D."
+		},
+		"mar": {
+			"1": "Paddeu G.",
+			"2": "Spano P.",
+			"3": "Spano P.",
+			"4": "Pinna A.",
+			"5": "Cidda C.",
+			"6": "Bullitta S."
+		},
+		"mer": {
+			"1": "Serra M.",
+			"2": "Di Cesare F.",
+			"3": "Biscu A.",
+			"4": "Di Cesare F.",
+			"5": "Serra L. (suppl. Erca. M.)"
+		},
+		"gio": {
+			"1": "Spano P.",
+			"2": "Serra L. (suppl. Erca. M.)",
+			"3": "Serra L. (suppl. Erca. M.)",
+			"4": "Paddeu G. - Ledda A.",
+			"5": "Pinna A.",
+			"6": "Mascherona A."
+		},
+		"ven": {
+			"1": "Biscu A.",
+			"2": "Cidda C.",
+			"3": "Paddeu G.",
+			"4": "Spano P."
+		},
+		"sab": {
+			"1": "Bullitta S.",
+			"2": "Cidda C.",
+			"3": "Serra M.",
+			"4": "Biscu A. - Garau G.",
+			"5": "Serra L. (suppl. Erca. M.)"
+		}
+	},
+	"2^C": {
+		"lun": {
+			"1": "Mascherona A.",
+			"2": "Mascherona A.",
+			"3": "Cidda C.",
+			"4": "Mereu G.",
+			"5": "Mecarelli E.",
+			"6": "Bullitta S."
+		},
+		"mar": {
+			"1": "Mecarelli E.",
+			"2": "Paddeu G.",
+			"3": "Cidda C.",
+			"4": "Canaj A.",
+			"5": "Mereu G.",
+			"6": "Pinna A. - Fadda G. D."
+		},
+		"mer": {
+			"1": "Mecarelli E.",
+			"2": "Biscu A.",
+			"3": "Lillo R.",
+			"4": "Lillo R.",
+			"5": "Canaj A.",
+			"6": "Cidda C."
+		},
+		"gio": {
+			"1": "Pinna A.",
+			"2": "Mereu G. - Boi G.",
+			"3": "Paddeu G. - Ledda A.",
+			"4": "Biscu A.",
+			"5": "Secchi D."
+		},
+		"ven": {
+			"1": "Canaj A.",
+			"2": "Canaj A.",
+			"3": "Pinna A.",
+			"4": "Mereu G. - Boi G."
+		},
+		"sab": {
+			"1": "Canaj A.",
+			"2": "Canaj A.",
+			"3": "Biscu A. - Garau G.",
+			"4": "Paddeu G.",
+			"5": "Bullitta S."
+		}
+	},
+	"2^D": {
+		"lun": {
+			"1": "Costeri A. F.",
+			"2": "Tronci F.",
+			"3": "Tronci F.",
+			"4": "Lai S.",
+			"5": "Guria M.",
+			"6": "Barrui A."
+		},
+		"mar": {
+			"1": "Floris M.",
+			"2": "Floris M.",
+			"3": "Ladu G.",
+			"4": "Barrui A.",
+			"5": "Putzu G.",
+			"6": "Secchi D."
+		},
+		"mer": {
+			"1": "Costeri A. F.",
+			"2": "Costeri A. F.",
+			"3": "Boeddu G.",
+			"4": "Boeddu G.",
+			"5": "Pisanu R.",
+			"6": "Lai S."
+		},
+		"gio": {
+			"1": "Costa V.",
+			"2": "Costa V.",
+			"3": "Pisanu R.",
+			"4": "Ladu G.",
+			"5": "Costeri A. F.",
+			"6": "Costeri A. F."
+		},
+		"ven": {
+			"1": "Guria M.",
+			"2": "Barrui A.",
+			"3": "Barrui A.",
+			"4": "Pisanu R."
+		},
+		"sab": {
+			"1": "Lai S.",
+			"2": "Putzu G.",
+			"3": "Putzu G.",
+			"4": "Costeri A. F."
+		}
+	},
+	"2^E": {
+		"lun": {
+			"1": "Niedda F.",
+			"2": "Niedda F.",
+			"3": "Boeddu G.",
+			"4": "Orunesu M. G.",
+			"5": "Cicalò I."
+		},
+		"mar": {
+			"1": "Orunesu M. G.",
+			"2": "Cicalò I.",
+			"3": "Clausi M.",
+			"4": "Chisu L.",
+			"5": "Chisu L.",
+			"6": "Spano P."
+		},
+		"mer": {
+			"1": "Tronci F.",
+			"2": "Tronci F.",
+			"3": "Clausi M.",
+			"4": "Spano P.",
+			"5": "Sanna S.",
+			"6": "Tocco D."
+		},
+		"gio": {
+			"1": "Sanna S.",
+			"2": "Sanna S.",
+			"3": "Cicalò I.",
+			"4": "Spano P.",
+			"5": "Niedda F.",
+			"6": "Niedda F."
+		},
+		"ven": {
+			"1": "Floris M. A.",
+			"2": "Spano P.",
+			"3": "Spano P.",
+			"4": "Boeddu G.",
+			"5": "Tocco D.",
+			"6": "Tocco D."
+		},
+		"sab": {
+			"1": "Orunesu M. G.",
+			"2": "Chisu L.",
+			"3": "Clausi M.",
+			"4": "Spano P.",
+			"5": "Spano P."
+		}
+	},
+	"2^F": {
+		"lun": {
+			"1": "Chisu L.",
+			"2": "Chisu L.",
+			"3": "Orunesu M. G.",
+			"4": "Cicalò I.",
+			"5": "Sanna S.",
+			"6": "Sanna S."
+		},
+		"mar": {
+			"1": "Gungui P.",
+			"2": "Boeddu G.",
+			"3": "Niedda F.",
+			"4": "Niedda F.",
+			"5": "Tocco D.",
+			"6": "Tocco D."
+		},
+		"mer": {
+			"1": "Gungui P.",
+			"2": "Cicalò I.",
+			"3": "Orunesu M. G.",
+			"4": "Gungui P.",
+			"5": "Serra M. L."
+		},
+		"gio": {
+			"1": "Cicalò I.",
+			"2": "Gungui P.",
+			"3": "Gungui P.",
+			"4": "Floris M. A.",
+			"5": "Davoli A.",
+			"6": "Davoli A."
+		},
+		"ven": {
+			"1": "Boeddu G.",
+			"2": "Serra M. L.",
+			"3": "Tocco D.",
+			"4": "Sanna S.",
+			"5": "Niedda F.",
+			"6": "Niedda F."
+		},
+		"sab": {
+			"1": "Chisu L.",
+			"2": "Serra M. L.",
+			"3": "Orunesu M. G.",
+			"4": "Gungui P.",
+			"5": "Gungui P."
+		}
+	},
+	"2^G": {
+		"lun": {
+			"1": "Laria L.",
+			"2": "Boeddu G.",
+			"3": "Cicalò I.",
+			"4": "Clausi M.",
+			"5": "Niedda F.",
+			"6": "Niedda F."
+		},
+		"mar": {
+			"1": "Floris M. A.",
+			"2": "Corsi F.",
+			"3": "Laria L.",
+			"4": "Laria L.",
+			"5": "Boeddu G.",
+			"6": "Chisu L."
+		},
+		"mer": {
+			"1": "Tocco D.",
+			"2": "Tocco D.",
+			"3": "Cicalò I.",
+			"4": "Niedda F.",
+			"5": "Niedda F."
+		},
+		"gio": {
+			"1": "Davoli A.",
+			"2": "Davoli A.",
+			"3": "Tocco D.",
+			"4": "Sanna S.",
+			"5": "Corsi F.",
+			"6": "Laria L."
+		},
+		"ven": {
+			"1": "Cicalò I.",
+			"2": "Laria L.",
+			"3": "Laria L.",
+			"4": "Clausi M.",
+			"5": "Sanna S.",
+			"6": "Sanna S."
+		},
+		"sab": {
+			"1": "Corsi F.",
+			"2": "Clausi M.",
+			"3": "Chisu L.",
+			"4": "Chisu L.",
+			"5": "Laria L."
+		}
+	},
+	"3^A": {
+		"lun": {
+			"1": "Manca G.",
+			"2": "Manca G.",
+			"3": "Melis M.",
+			"4": "Iacobini S.",
+			"5": "Angioi A. - Caggiari G.",
+			"6": "Iacobini S."
+		},
+		"mar": {
+			"1": "Melis M.",
+			"2": "Guiso N.",
+			"3": "Iacobini S.",
+			"4": "Manca G.",
+			"5": "Manca G."
+		},
+		"mer": {
+			"1": "Angioi A. - Caggiari G.",
+			"2": "Angioi A. - Caggiari G.",
+			"3": "Guiso N.",
+			"4": "Monni S.",
+			"5": "Monni S.",
+			"6": "Guiso N."
+		},
+		"gio": {
+			"1": "Angioi A.",
+			"2": "Melis M.",
+			"3": "Manca G.",
+			"4": "Manca G.",
+			"5": "Iacobini S. - Murru P.",
+			"6": "Iacobini S. - Murru P."
+		},
+		"ven": {
+			"1": "Iacobini S.",
+			"2": "Iacobini S. - Murru P.",
+			"3": "Caboi M.",
+			"4": "Caboi M."
+		},
+		"sab": {
+			"1": "Floris M. A.",
+			"2": "Iacobini S. - Murru P.",
+			"3": "Iacobini S. - Murru P.",
+			"4": "Monni S.",
+			"5": "Melis M."
+		}
+	},
+	"3^B": {
+		"lun": {
+			"1": "Serra M.",
+			"2": "Serra M.",
+			"3": "Mereu G.",
+			"4": "Guiso M. - Fadda A.",
+			"5": "Fara G.",
+			"6": "Loi G. - Zidda D. B."
+		},
+		"mar": {
+			"1": "Mereu G.",
+			"2": "Virdis A.",
+			"3": "Virdis A.",
+			"4": "Serra M. - Caprini D.",
+			"5": "Bussu P."
+		},
+		"mer": {
+			"1": "Lillo R.",
+			"2": "Lillo R.",
+			"3": "Loi G. - Zidda D. B.",
+			"4": "Virdis A.",
+			"5": "Virdis A.",
+			"6": "Mereu G."
+		},
+		"gio": {
+			"1": "Bussu P.",
+			"2": "Nonne V. - Fadda A.",
+			"3": "Nonne V.",
+			"4": "Loi G.",
+			"5": "Fara G.",
+			"6": "Secchi D."
+		},
+		"ven": {
+			"1": "Guiso M. - Fadda A.",
+			"2": "Serra M.",
+			"3": "Mereu G.",
+			"4": "Guiso M."
+		},
+		"sab": {
+			"1": "Bussu P.",
+			"2": "Guiso M.",
+			"3": "Nonne V.",
+			"4": "Serra M. - Caprini D.",
+			"5": "Serra M. - Caprini D."
+		}
+	},
+	"3^C": {
+		"lun": {
+			"1": "Mecarelli E.",
+			"2": "Mecarelli E. - Caprini D.",
+			"3": "Guiso M.",
+			"4": "Secchi D.",
+			"5": "Maloccu R."
+		},
+		"mar": {
+			"1": "Motzo G.",
+			"2": "Gungui P.",
+			"3": "Mecarelli E.",
+			"4": "Virdis A.",
+			"5": "Loi G. - Zidda D. B.",
+			"6": "Loi G. - Zidda D. B."
+		},
+		"mer": {
+			"1": "Guria M.",
+			"2": "Motzo G.",
+			"3": "Mecarelli E.",
+			"4": "Loi G.",
+			"5": "Guria M.",
+			"6": "Virdis A."
+		},
+		"gio": {
+			"1": "Gungui P.",
+			"2": "Mecarelli E. - Caprini D.",
+			"3": "Mecarelli E. - Caprini D.",
+			"4": "Motzo G.",
+			"5": "Maloccu R.",
+			"6": "Maloccu R."
+		},
+		"ven": {
+			"1": "Lillo R.",
+			"2": "Lillo R.",
+			"3": "Guiso M. - Fadda A.",
+			"4": "Maloccu R."
+		},
+		"sab": {
+			"1": "Gungui P.",
+			"2": "Gungui P.",
+			"3": "Guiso M.",
+			"4": "Guria M. - Fadda A.",
+			"5": "Guria M. - Fadda A."
+		}
+	},
+	"3^D": {
+		"lun": {
+			"1": "Virdis A.",
+			"2": "Ladu G.",
+			"3": "Lai S.",
+			"4": "Ladu G.",
+			"5": "Virdis A.",
+			"6": "Guria M."
+		},
+		"mar": {
+			"1": "Secchi D.",
+			"2": "Ladu G.",
+			"3": "Tronci F.",
+			"4": "Tronci F.",
+			"5": "Barrui A."
+		},
+		"mer": {
+			"1": "Ladu G.",
+			"2": "Pisanu R.",
+			"3": "Cossu G.",
+			"4": "Cossu G.",
+			"5": "Lai S.",
+			"6": "Barrui A."
+		},
+		"gio": {
+			"1": "Virdis A.",
+			"2": "Virdis A.",
+			"3": "Ladu G.",
+			"4": "Pisanu R.",
+			"5": "Cossu G.",
+			"6": "Cossu G."
+		},
+		"ven": {
+			"1": "Ladu G.",
+			"2": "Cossu G.",
+			"3": "Guria M.",
+			"4": "Barrui A."
+		},
+		"sab": {
+			"1": "Virdis A.",
+			"2": "Pisanu R.",
+			"3": "Virdis A.",
+			"4": "Lai S.",
+			"5": "Cossu G."
+		}
+	},
+	"3^E": {
+		"lun": {
+			"1": "Cidda T.",
+			"2": "Di Cesare F.",
+			"3": "Di Cesare F.",
+			"4": "Cidda T.",
+			"5": "Monni S.",
+			"6": "Floris M. A."
+		},
+		"mar": {
+			"1": "Pais P.",
+			"2": "Pais P.",
+			"3": "Vinci E.",
+			"4": "Di Cesare F.",
+			"5": "Pais P.",
+			"6": "Pais P."
+		},
+		"mer": {
+			"1": "Pais P.",
+			"2": "Pais P.",
+			"3": "Paddeu G.",
+			"4": "Serra M. L.",
+			"5": "Cidda T.",
+			"6": "Vinci E."
+		},
+		"gio": {
+			"1": "Pais P.",
+			"2": "Pais P.",
+			"3": "Cidda T.",
+			"4": "Vinci E.",
+			"5": "Vinci E.",
+			"6": "Di Cesare F."
+		},
+		"ven": {
+			"1": "Tronci F.",
+			"2": "Tronci F.",
+			"3": "Pais P.",
+			"4": "Pais P.",
+			"5": "Serra M. L.",
+			"6": "Monni S."
+		},
+		"sab": {
+			"1": "Serra M. L.",
+			"2": "Monni S.",
+			"3": "Pais P.",
+			"4": "Pais P.",
+			"5": "Paddeu G."
+		}
+	},
+	"3^F": {
+		"lun": {
+			"1": "Cidda C.",
+			"2": "Pisuttu M. T.",
+			"3": "Pisuttu M. T.",
+			"4": "Di Cesare F.",
+			"5": "Di Cesare F.",
+			"6": "Arca L."
+		},
+		"mar": {
+			"1": "Flore M. A.",
+			"2": "Flore M. A.",
+			"3": "Cucca E.",
+			"4": "Cidda C.",
+			"5": "Pisuttu M. T.",
+			"6": "Pisuttu M. T."
+		},
+		"mer": {
+			"1": "Vinci E.",
+			"2": "Clausi M.",
+			"3": "Di Cesare F.",
+			"4": "Arca L.",
+			"5": "Flore M. A.",
+			"6": "Flore M. A."
+		},
+		"gio": {
+			"1": "Floris M. A.",
+			"2": "Cucca E.",
+			"3": "Arca L.",
+			"4": "Arca L.",
+			"5": "Flore M. A.",
+			"6": "Flore M. A."
+		},
+		"ven": {
+			"1": "Paddeu G.",
+			"2": "Clausi M.",
+			"3": "Pisuttu M. T.",
+			"4": "Pisuttu M. T.",
+			"5": "Davoli A.",
+			"6": "Davoli A."
+		},
+		"sab": {
+			"1": "Cidda C.",
+			"2": "Paddeu G.",
+			"3": "Vinci E.",
+			"4": "Di Cesare F.",
+			"5": "Clausi M."
+		}
+	},
+	"3^G": {
+		"lun": {
+			"1": "Casula S.",
+			"2": "Casula S.",
+			"3": "Casula S.",
+			"4": "Casula S.",
+			"5": "Arca L.",
+			"6": "Clausi M."
+		},
+		"mar": {
+			"1": "Clausi M.",
+			"2": "Vinci E.",
+			"3": "Floris M. A.",
+			"4": "Arca L.",
+			"5": "Arca L.",
+			"6": "Corsi F."
+		},
+		"mer": {
+			"1": "Casula S.",
+			"2": "Casula S.",
+			"3": "Davoli A.",
+			"4": "Davoli A.",
+			"5": "Arca L.",
+			"6": "Paddeu G."
+		},
+		"gio": {
+			"1": "Cacciatori A.",
+			"2": "Cacciatori A.",
+			"3": "Casula S.",
+			"4": "Casula S.",
+			"5": "Conti G. S.",
+			"6": "Corsi F."
+		},
+		"ven": {
+			"1": "Cacciatori A.",
+			"2": "Cacciatori A.",
+			"3": "Corsi F.",
+			"4": "Conti G. S.",
+			"5": "Casula S.",
+			"6": "Casula S."
+		},
+		"sab": {
+			"1": "Clausi M.",
+			"2": "Vinci E.",
+			"3": "Paddeu G.",
+			"4": "Casula S.",
+			"5": "Casula S."
+		}
+	},
+	"4^A": {
+		"lun": {
+			"1": "Guiso N.",
+			"2": "Guiso N. - Murru P.",
+			"3": "Manca G.",
+			"4": "Melis M.",
+			"5": "Greco S. - Murru P.",
+			"6": "Greco S. - Murru P."
+		},
+		"mar": {
+			"1": "Guiso N.",
+			"2": "Manca G.",
+			"3": "Melis M.",
+			"4": "Greco S. - Murru P.",
+			"5": "Greco S. - Murru P.",
+			"6": "Greco S."
+		},
+		"mer": {
+			"1": "Corsi F.",
+			"2": "Greco S.",
+			"3": "Greco S.",
+			"4": "Angioi A. - Caggiari G.",
+			"5": "Manca G.",
+			"6": "Manca G."
+		},
+		"gio": {
+			"1": "Manca G.",
+			"2": "Manca G.",
+			"3": "Corsi F.",
+			"4": "Angioi A.",
+			"5": "Floris M. A.",
+			"6": "Guiso N."
+		},
+		"ven": {
+			"1": "Greco S. - Murru P.",
+			"2": "Melis M.",
+			"3": "Angioi A. - Caggiari G.",
+			"4": "Angioi A. - Caggiari G."
+		},
+		"sab": {
+			"1": "Melis M.",
+			"2": "Corsi F.",
+			"3": "Caboi M.",
+			"4": "Caboi M."
+		}
+	},
+	"4^B": {
+		"lun": {
+			"1": "Incollu M. - Caprini D.",
+			"2": "Incollu M.",
+			"3": "Lillo R.",
+			"4": "Lillo R.",
+			"5": "Secchi D.",
+			"6": "Maloccu R."
+		},
+		"mar": {
+			"1": "Lai D. - Fadda A.",
+			"2": "Lai D. - Fadda A.",
+			"3": "Fara G.",
+			"4": "Fara G.",
+			"5": "Guria M. - Caprini D.",
+			"6": "Guria M. - Caprini D."
+		},
+		"mer": {
+			"1": "Lai D.",
+			"2": "Bussu P.",
+			"3": "Guria M.",
+			"4": "Fara G.",
+			"5": "Loi G. - Zidda D. B.",
+			"6": "Loi G. - Zidda D. B."
+		},
+		"gio": {
+			"1": "Loi G.",
+			"2": "Fara G.",
+			"3": "Fara G.",
+			"4": "Maloccu R.",
+			"5": "Bussu P."
+		},
+		"ven": {
+			"1": "Maloccu R.",
+			"2": "Incollu M. - Caprini D.",
+			"3": "Incollu M. - Caprini D.",
+			"4": "Fara G."
+		},
+		"sab": {
+			"1": "Lai D.",
+			"2": "Incollu M.",
+			"3": "Incollu M. - Caprini D.",
+			"4": "Maloccu R.",
+			"5": "Bussu P."
+		}
+	},
+	"4^C": {
+		"lun": {
+			"1": "Mereu G.",
+			"2": "Secchi D.",
+			"3": "Incollu M.",
+			"4": "Loi G. - Zidda D. B.",
+			"5": "Loi G. - Zidda D. B.",
+			"6": "Porqueddu R. (suppl. Seddone M.)"
+		},
+		"mar": {
+			"1": "Porqueddu R. (suppl. Seddone M.)",
+			"2": "Mereu G.",
+			"3": "Lillo R.",
+			"4": "Lillo R.",
+			"5": "Fadda A. - Incollu M.",
+			"6": "Fadda A. - Incollu M."
+		},
+		"mer": {
+			"1": "Porqueddu R. (suppl. Seddone M.)",
+			"2": "Lai D. - Satta G.",
+			"3": "Lai D. - Satta G.",
+			"4": "Cidda C.",
+			"5": "Mereu G.",
+			"6": "Guria M."
+		},
+		"gio": {
+			"1": "Mereu G.",
+			"2": "Loi G.",
+			"3": "Fadda A. - Incollu M.",
+			"4": "Lai D.",
+			"5": "Incollu M."
+		},
+		"ven": {
+			"1": "Cidda C.",
+			"2": "Porqueddu R. (suppl. Seddone M.)",
+			"3": "Porqueddu R. (suppl. Seddone M.)",
+			"4": "Fadda A. - Incollu M."
+		},
+		"sab": {
+			"1": "Guria M. - Fadda A.",
+			"2": "Guria M. - Fadda A.",
+			"3": "Lai D.",
+			"4": "Cidda C.",
+			"5": "Porqueddu R. (suppl. Seddone M.)"
+		}
+	},
+	"4^D": {
+		"lun": {
+			"1": "Barrui A.",
+			"2": "Barrui A.",
+			"3": "Guria M.",
+			"4": "Costeri A. F.",
+			"5": "Ladu G.",
+			"6": "Ladu G."
+		},
+		"mar": {
+			"1": "Cossu G.",
+			"2": "Cossu G.",
+			"3": "Barrui A.",
+			"4": "Ladu G.",
+			"5": "Secchi D."
+		},
+		"mer": {
+			"1": "Cossu G.",
+			"2": "Cossu G.",
+			"3": "Costeri A. F.",
+			"4": "Costeri A. F.",
+			"5": "Ladu G.",
+			"6": "Motzo G."
+		},
+		"gio": {
+			"1": "Pisanu R.",
+			"2": "Motzo G.",
+			"3": "Costeri A. F.",
+			"4": "Costeri A. F.",
+			"5": "Tronci F.",
+			"6": "Tronci F."
+		},
+		"ven": {
+			"1": "Cossu G.",
+			"2": "Ladu G.",
+			"3": "Pisanu R.",
+			"4": "Guria M."
+		},
+		"sab": {
+			"1": "Cossu G.",
+			"2": "Motzo G.",
+			"3": "Costeri A. F.",
+			"4": "Cossu G.",
+			"5": "Pisanu R."
+		}
+	},
+	"4^E": {
+		"lun": {
+			"1": "Porcu D. - Tendas M.",
+			"2": "Porcu D. - Tendas M.",
+			"3": "Cidda T.",
+			"4": "Floris M. A.",
+			"5": "Orunesu M. G.",
+			"6": "Conti G. S."
+		},
+		"mar": {
+			"1": "Serra M. L.",
+			"2": "Orunesu M. G.",
+			"3": "Porcu D. - Tendas M.",
+			"4": "Porcu D. - Tendas M.",
+			"5": "Cidda T.",
+			"6": "Di Cesare F."
+		},
+		"mer": {
+			"1": "Cidda T.",
+			"2": "Vinci E.",
+			"3": "Casula S. - Pais P.",
+			"4": "Casula S. - Pais P.",
+			"5": "Conti G. S.",
+			"6": "Costa V."
+		},
+		"gio": {
+			"1": "Orunesu M. G.",
+			"2": "Di Cesare F.",
+			"3": "Di Cesare F.",
+			"4": "Serra M. L.",
+			"5": "Casula S. - Pais P.",
+			"6": "Casula S. - Pais P."
+		},
+		"ven": {
+			"1": "Cidda T.",
+			"2": "Costa V.",
+			"3": "Vinci E.",
+			"4": "Serra M. L.",
+			"5": "Caboi M.",
+			"6": "Caboi M."
+		},
+		"sab": {
+			"1": "Casula S. - Pais P.",
+			"2": "Casula S. - Pais P.",
+			"3": "Di Cesare F.",
+			"4": "Porcu D. - Tendas M.",
+			"5": "Porcu D. - Tendas M."
+		}
+	},
+	"4^F": {
+		"lun": {
+			"1": "Flore M. A.",
+			"2": "Flore M. A.",
+			"3": "Cacciatori A.",
+			"4": "Arca L.",
+			"5": "Pisuttu M. T.",
+			"6": "Pisuttu M. T."
+		},
+		"mar": {
+			"1": "Costa V.",
+			"2": "Motzo G.",
+			"3": "Cacciatori A.",
+			"4": "Cacciatori A.",
+			"5": "Flore M. A.",
+			"6": "Flore M. A."
+		},
+		"mer": {
+			"1": "Serra M. L.",
+			"2": "Arca L.",
+			"3": "Pisuttu M. T.",
+			"4": "Pisuttu M. T.",
+			"5": "Davoli A.",
+			"6": "Davoli A."
+		},
+		"gio": {
+			"1": "Serra M. L.",
+			"2": "Pisuttu M. T.",
+			"3": "Pisuttu M. T.",
+			"4": "Cucca E.",
+			"5": "Arca L.",
+			"6": "Conti G. S."
+		},
+		"ven": {
+			"1": "Arca L.",
+			"2": "Conti G. S.",
+			"3": "Flore M. A.",
+			"4": "Flore M. A.",
+			"5": "Cacciatori A.",
+			"6": "Motzo G."
+		},
+		"sab": {
+			"1": "Cucca E.",
+			"2": "Floris M. A.",
+			"3": "Serra M. L.",
+			"4": "Motzo G.",
+			"5": "Costa V."
+		}
+	},
+	"4^I": {
+		"lun": {
+			"1": "Cacciatori A.",
+			"2": "Serra L. (suppl. Erca. M.)",
+			"3": "Mecarelli E. - Satta G.",
+			"4": "Mecarelli E. - Satta G.",
+			"5": "Guiso M. - Fadda A.",
+			"6": "Guiso M. - Fadda A."
+		},
+		"mar": {
+			"1": "Incollu M. - Caprini D.",
+			"2": "Incollu M. - Caprini D.",
+			"3": "Loi G. - Zidda D. B.",
+			"4": "Loi G. - Zidda D. B.",
+			"5": "Cacciatori A.",
+			"6": "Cacciatori A."
+		},
+		"mer": {
+			"1": "Bussu P.",
+			"2": "Mecarelli E.",
+			"3": "Serra L. (suppl. Erca. M.)",
+			"4": "Cacciatori A.",
+			"5": "Cacciatori A."
+		},
+		"gio": {
+			"1": "Mecarelli E.",
+			"2": "Bussu P.",
+			"3": "Cacciatori A.",
+			"4": "Serra L. (suppl. Erca. M.)",
+			"5": "Loi G.",
+			"6": "Incollu M. - Caprini D."
+		},
+		"ven": {
+			"1": "Incollu M. - Caprini D.",
+			"2": "Guiso M.",
+			"3": "Davoli A.",
+			"4": "Davoli A."
+		},
+		"sab": {
+			"1": "Secchi D.",
+			"2": "Bussu P.",
+			"3": "Serra L. (suppl. Erca. M.)",
+			"4": "Incollu M.",
+			"5": "Incollu M."
+		}
+	},
+	"5^A": {
+		"lun": {
+			"1": "Iacobini S.",
+			"2": "Iacobini S.",
+			"3": "Monni S.",
+			"4": "Manca G.",
+			"5": "Melis M.",
+			"6": "Angioi A. - Caggiari G."
+		},
+		"mar": {
+			"1": "Manca G.",
+			"2": "Iacobini S. - Murru P.",
+			"3": "Guiso N. - Murru P.",
+			"4": "Monni S.",
+			"5": "Iacobini S.",
+			"6": "Iacobini S. - Murru P."
+		},
+		"mer": {
+			"1": "Monni S.",
+			"2": "Guiso N.",
+			"3": "Manca G.",
+			"4": "Manca G.",
+			"5": "Guiso N."
+		},
+		"gio": {
+			"1": "Melis M.",
+			"2": "Floris M. A.",
+			"3": "Iacobini S. - Murru P.",
+			"4": "Iacobini S. - Murru P.",
+			"5": "Guiso N.",
+			"6": "Angioi A."
+		},
+		"ven": {
+			"1": "Angioi A. - Caggiari G.",
+			"2": "Angioi A. - Caggiari G.",
+			"3": "Manca G.",
+			"4": "Manca G."
+		},
+		"sab": {
+			"1": "Caboi M.",
+			"2": "Caboi M.",
+			"3": "Melis M.",
+			"4": "Iacobini S. - Murru P.",
+			"5": "Iacobini S. - Murru P."
+		}
+	},
+	"5^B": {
+		"lun": {
+			"1": "Secchi D.",
+			"2": "Nonne V.",
+			"3": "Fara G.",
+			"4": "Fara G.",
+			"5": "Serra L. (suppl. Erca. M.)",
+			"6": "Paddeu F. - Sanna M."
+		},
+		"mar": {
+			"1": "Fara G.",
+			"2": "Fara G.",
+			"3": "Paddeu F.",
+			"4": "Bussu P.",
+			"5": "Guiso M. - Satta G.",
+			"6": "Guiso M. - Satta G."
+		},
+		"mer": {
+			"1": "Guiso M.",
+			"2": "Fara G.",
+			"3": "Fara G.",
+			"4": "Serra L. (suppl. Erca. M.)",
+			"5": "Lai D."
+		},
+		"gio": {
+			"1": "Nonne V.",
+			"2": "Paddeu F. - Sanna M.",
+			"3": "Paddeu F. - Sanna M.",
+			"4": "Bussu P.",
+			"5": "Lillo R.",
+			"6": "Lillo R."
+		},
+		"ven": {
+			"1": "Bussu P.",
+			"2": "Nonne V.",
+			"3": "Paddeu F.",
+			"4": "Lai D. - Satta G."
+		},
+		"sab": {
+			"1": "Guiso M.",
+			"2": "Serra L. (suppl. Erca. M.)",
+			"3": "Paddeu F. - Sanna M.",
+			"4": "Lai D. - Satta G.",
+			"5": "Lai D. - Satta G."
+		}
+	},
+	"5^C": {
+		"lun": {
+			"1": "Nonne V.",
+			"2": "Cidda C.",
+			"3": "Murru B.",
+			"4": "Serra L. (suppl. Erca. M.)",
+			"5": "Paddeu F. - Sanna M.",
+			"6": "Murru B."
+		},
+		"mar": {
+			"1": "Murru B.",
+			"2": "Paddeu F.",
+			"3": "Lai D. - Satta G.",
+			"4": "Guiso M.",
+			"5": "Lillo R.",
+			"6": "Lillo R."
+		},
+		"mer": {
+			"1": "Nonne V.",
+			"2": "Nonne V.",
+			"3": "Cidda C.",
+			"4": "Guiso M. - Satta G.",
+			"5": "Guiso M. - Satta G.",
+			"6": "Serra L. (suppl. Erca. M.)"
+		},
+		"gio": {
+			"1": "Murru B.",
+			"2": "Murru B.",
+			"3": "Lai D.",
+			"4": "Paddeu F. - Sanna M.",
+			"5": "Paddeu F. - Sanna M."
+		},
+		"ven": {
+			"1": "Lai D. - Satta G.",
+			"2": "Lai D. - Satta G.",
+			"3": "Murru B.",
+			"4": "Paddeu F."
+		},
+		"sab": {
+			"1": "Serra L. (suppl. Erca. M.)",
+			"2": "Paddeu F. - Sanna M.",
+			"3": "Secchi D.",
+			"4": "Guiso M.",
+			"5": "Cidda C."
+		}
+	},
+	"5^D": {
+		"lun": {
+			"1": "Ladu G.",
+			"2": "Costeri A. F.",
+			"3": "Costeri A. F.",
+			"4": "Barrui A.",
+			"5": "Barrui A."
+		},
+		"mar": {
+			"1": "Ladu G.",
+			"2": "Secchi D.",
+			"3": "Cossu G.",
+			"4": "Cossu G.",
+			"5": "Tronci F.",
+			"6": "Tronci F."
+		},
+		"mer": {
+			"1": "Pisanu R.",
+			"2": "Barrui A.",
+			"3": "Ladu G.",
+			"4": "Ladu G.",
+			"5": "Motzo G.",
+			"6": "Costeri A. F."
+		},
+		"gio": {
+			"1": "Motzo G.",
+			"2": "Pisanu R.",
+			"3": "Cossu G.",
+			"4": "Cossu G.",
+			"5": "Ladu G.",
+			"6": "Ladu G."
+		},
+		"ven": {
+			"1": "Costeri A. F.",
+			"2": "Costeri A. F.",
+			"3": "Cossu G.",
+			"4": "Cossu G."
+		},
+		"sab": {
+			"1": "Motzo G.",
+			"2": "Cossu G.",
+			"3": "Cossu G.",
+			"4": "Pisanu R.",
+			"5": "Costeri A. F."
+		}
+	},
+	"5^E": {
+		"lun": {
+			"1": "Fara G.",
+			"2": "Floris M. A.",
+			"3": "Porcu D.",
+			"4": "Porcu D.",
+			"5": "Cidda T.",
+			"6": "Monni S."
+		},
+		"mar": {
+			"1": "Cucca E.",
+			"2": "Serra M. L.",
+			"3": "Monni S.",
+			"4": "Cidda T.",
+			"5": "Porcu D.",
+			"6": "Porcu D."
+		},
+		"mer": {
+			"1": "Fara G.",
+			"2": "Serra M. L.",
+			"3": "Serra M. L.",
+			"4": "Cidda T.",
+			"5": "Tronci F.",
+			"6": "Tronci F."
+		},
+		"gio": {
+			"1": "Porcu D.",
+			"2": "Porcu D.",
+			"3": "Cucca E.",
+			"4": "Cidda T.",
+			"5": "Porcu D.",
+			"6": "Porcu D."
+		},
+		"ven": {
+			"1": "Fara G.",
+			"2": "Fara G.",
+			"3": "Porcu D.",
+			"4": "Porcu D.",
+			"5": "Porcu D.",
+			"6": "Porcu D."
+		},
+		"sab": {
+			"1": "Porcu D.",
+			"2": "Porcu D.",
+			"3": "Cucca E.",
+			"4": "Cucca E.",
+			"5": "Monni S."
+		}
+	},
+	"5^F": {
+		"lun": {
+			"1": "Clausi M.",
+			"2": "Cacciatori A.",
+			"3": "Arca L.",
+			"4": "Monni S.",
+			"5": "Flore M. A.",
+			"6": "Flore M. A."
+		},
+		"mar": {
+			"1": "Vinci E.",
+			"2": "Clausi M.",
+			"3": "Pisuttu M. T.",
+			"4": "Pisuttu M. T.",
+			"5": "Monni S.",
+			"6": "Arca L."
+		},
+		"mer": {
+			"1": "Arca L.",
+			"2": "Cacciatori A.",
+			"3": "Cacciatori A.",
+			"4": "Clausi M.",
+			"5": "Pisuttu M. T.",
+			"6": "Pisuttu M. T."
+		},
+		"gio": {
+			"1": "Vinci E.",
+			"2": "Vinci E.",
+			"3": "Flore M. A.",
+			"4": "Flore M. A.",
+			"5": "Pisuttu M. T.",
+			"6": "Pisuttu M. T."
+		},
+		"ven": {
+			"1": "Pisuttu M. T.",
+			"2": "Pisuttu M. T.",
+			"3": "Arca L.",
+			"4": "Cacciatori A.",
+			"5": "Flore M. A.",
+			"6": "Flore M. A."
+		},
+		"sab": {
+			"1": "Davoli A.",
+			"2": "Davoli A.",
+			"3": "Monni S.",
+			"4": "Vinci E.",
+			"5": "Floris M. A."
+		}
+	},
+	"5^G": {
+		"lun": {
+			"1": "Floris M. A.",
+			"2": "Clausi M.",
+			"3": "Laria L.",
+			"4": "Laria L.",
+			"5": "Tendas M.",
+			"6": "Tendas M."
+		},
+		"mar": {
+			"1": "Tendas M.",
+			"2": "Tendas M.",
+			"3": "Caboi M.",
+			"4": "Caboi M.",
+			"5": "Laria L.",
+			"6": "Cidda T."
+		},
+		"mer": {
+			"1": "Clausi M.",
+			"2": "Cidda T.",
+			"3": "Conti G. S.",
+			"4": "Vinci E.",
+			"5": "Corsi F.",
+			"6": "Conti G. S."
+		},
+		"gio": {
+			"1": "Cidda T.",
+			"2": "Tendas M.",
+			"3": "Tendas M.",
+			"4": "Corsi F.",
+			"5": "Tendas M.",
+			"6": "Tendas M."
+		},
+		"ven": {
+			"1": "Clausi M.",
+			"2": "Cidda T.",
+			"3": "Tendas M.",
+			"4": "Tendas M.",
+			"5": "Tendas M.",
+			"6": "Tendas M."
+		},
+		"sab": {
+			"1": "Tendas M.",
+			"2": "Tendas M.",
+			"3": "Corsi F.",
+			"4": "Laria L.",
+			"5": "Vinci E."
+		}
+	}
 }
