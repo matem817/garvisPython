@@ -8,7 +8,7 @@ import logging
 
 from botScripts.dataHandler import DataHandler, is_class_supported
 
-VERSION = "0.3.0beta"
+VERSION = "0.3.1beta"
 OWNERID = 6089716018
 HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
