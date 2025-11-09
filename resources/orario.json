@@ -1,5 +1,5 @@
 {
-	"1^A": {
+	"1A": {
 		"lun": {
 			"1": "Murru B.",
 			"2": "Putzu G.",
@@ -44,9 +44,12 @@
 			"3": "Costa V. - Ledda A.",
 			"4": "Floris M. A.",
 			"5": "Murru B."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^B": {
+	"1B": {
 		"lun": {
 			"1": "Bullitta S.",
 			"2": "Maloccu R.",
@@ -91,9 +94,12 @@
 			"3": "Canaj A.",
 			"4": "Canaj A.",
 			"5": "Secchi D."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^C": {
+	"1C": {
 		"lun": {
 			"1": "Putzu G.",
 			"2": "Pinna A.",
@@ -138,9 +144,12 @@
 			"3": "Bussu P.",
 			"4": "Costa V. - Ledda A.",
 			"5": "Biscu A. - Garau G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^D": {
+	"1D": {
 		"lun": {
 			"1": "Deroma S.",
 			"2": "Virdis A.",
@@ -184,9 +193,12 @@
 			"3": "Pisanu R.",
 			"4": "Virdis A.",
 			"5": "Virdis A."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^E": {
+	"1E": {
 		"lun": {
 			"1": "Manca E.",
 			"2": "Cicalò I.",
@@ -232,9 +244,12 @@
 			"2": "Tocco D.",
 			"3": "Gungui P.",
 			"4": "Orunesu M. G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^F": {
+	"1F": {
 		"lun": {
 			"1": "Boeddu G.",
 			"2": "Orunesu M. G.",
@@ -280,9 +295,12 @@
 			"3": "Davoli A.",
 			"4": "Davoli A.",
 			"5": "Orunesu M. G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^G": {
+	"1G": {
 		"lun": {
 			"1": "Davoli A.",
 			"2": "Davoli A.",
@@ -328,9 +346,12 @@
 			"3": "Tocco D.",
 			"4": "Tocco D.",
 			"5": "Serra M. L."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^H": {
+	"1H": {
 		"lun": {
 			"1": "Pinna A.",
 			"2": "Mereu G.",
@@ -375,9 +396,12 @@
 			"3": "Porqueddu R. (suppl. Seddone M.)",
 			"4": "Nonne V.",
 			"5": "Nonne V. - Sanna M."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"1^I": {
+	"1I": {
 		"lun": {
 			"1": "Porqueddu R. (suppl. Seddone M.)",
 			"2": "Porqueddu R. (suppl. Seddone M.)",
@@ -422,9 +446,12 @@
 			"3": "Bullitta S.",
 			"4": "Secchi D.",
 			"5": "Putzu G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^A": {
+	"2A": {
 		"lun": {
 			"1": "Maloccu R.",
 			"2": "Bullitta S.",
@@ -468,9 +495,12 @@
 			"3": "Maloccu R.",
 			"4": "Corsi F.",
 			"5": "Maloccu R."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^B": {
+	"2B": {
 		"lun": {
 			"1": "Lillo R.",
 			"2": "Lillo R.",
@@ -514,9 +544,12 @@
 			"3": "Serra M.",
 			"4": "Biscu A. - Garau G.",
 			"5": "Serra L. (suppl. Erca. M.)"
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^C": {
+	"2C": {
 		"lun": {
 			"1": "Mascherona A.",
 			"2": "Mascherona A.",
@@ -560,9 +593,12 @@
 			"3": "Biscu A. - Garau G.",
 			"4": "Paddeu G.",
 			"5": "Bullitta S."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^D": {
+	"2D": {
 		"lun": {
 			"1": "Costeri A. F.",
 			"2": "Tronci F.",
@@ -606,9 +642,12 @@
 			"2": "Putzu G.",
 			"3": "Putzu G.",
 			"4": "Costeri A. F."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^E": {
+	"2E": {
 		"lun": {
 			"1": "Niedda F.",
 			"2": "Niedda F.",
@@ -654,9 +693,12 @@
 			"3": "Clausi M.",
 			"4": "Spano P.",
 			"5": "Spano P."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^F": {
+	"2F": {
 		"lun": {
 			"1": "Chisu L.",
 			"2": "Chisu L.",
@@ -702,9 +744,12 @@
 			"3": "Orunesu M. G.",
 			"4": "Gungui P.",
 			"5": "Gungui P."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"2^G": {
+	"2G": {
 		"lun": {
 			"1": "Laria L.",
 			"2": "Boeddu G.",
@@ -750,9 +795,12 @@
 			"3": "Chisu L.",
 			"4": "Chisu L.",
 			"5": "Laria L."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^A": {
+	"3A": {
 		"lun": {
 			"1": "Manca G.",
 			"2": "Manca G.",
@@ -796,9 +844,12 @@
 			"3": "Iacobini S. - Murru P.",
 			"4": "Monni S.",
 			"5": "Melis M."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^B": {
+	"3B": {
 		"lun": {
 			"1": "Serra M.",
 			"2": "Serra M.",
@@ -842,9 +893,12 @@
 			"3": "Nonne V.",
 			"4": "Serra M. - Caprini D.",
 			"5": "Serra M. - Caprini D."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^C": {
+	"3C": {
 		"lun": {
 			"1": "Mecarelli E.",
 			"2": "Mecarelli E. - Caprini D.",
@@ -888,9 +942,12 @@
 			"3": "Guiso M.",
 			"4": "Guria M. - Fadda A.",
 			"5": "Guria M. - Fadda A."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^D": {
+	"3D": {
 		"lun": {
 			"1": "Virdis A.",
 			"2": "Ladu G.",
@@ -934,9 +991,12 @@
 			"3": "Virdis A.",
 			"4": "Lai S.",
 			"5": "Cossu G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^E": {
+	"3E": {
 		"lun": {
 			"1": "Cidda T.",
 			"2": "Di Cesare F.",
@@ -983,9 +1043,12 @@
 			"3": "Pais P.",
 			"4": "Pais P.",
 			"5": "Paddeu G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^F": {
+	"3F": {
 		"lun": {
 			"1": "Cidda C.",
 			"2": "Pisuttu M. T.",
@@ -1032,9 +1095,12 @@
 			"3": "Vinci E.",
 			"4": "Di Cesare F.",
 			"5": "Clausi M."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"3^G": {
+	"3G": {
 		"lun": {
 			"1": "Casula S.",
 			"2": "Casula S.",
@@ -1081,9 +1147,12 @@
 			"3": "Paddeu G.",
 			"4": "Casula S.",
 			"5": "Casula S."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^A": {
+	"4A": {
 		"lun": {
 			"1": "Guiso N.",
 			"2": "Guiso N. - Murru P.",
@@ -1127,9 +1196,12 @@
 			"2": "Corsi F.",
 			"3": "Caboi M.",
 			"4": "Caboi M."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^B": {
+	"4B": {
 		"lun": {
 			"1": "Incollu M. - Caprini D.",
 			"2": "Incollu M.",
@@ -1173,9 +1245,12 @@
 			"3": "Incollu M. - Caprini D.",
 			"4": "Maloccu R.",
 			"5": "Bussu P."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^C": {
+	"4C": {
 		"lun": {
 			"1": "Mereu G.",
 			"2": "Secchi D.",
@@ -1219,9 +1294,12 @@
 			"3": "Lai D.",
 			"4": "Cidda C.",
 			"5": "Porqueddu R. (suppl. Seddone M.)"
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^D": {
+	"4D": {
 		"lun": {
 			"1": "Barrui A.",
 			"2": "Barrui A.",
@@ -1265,9 +1343,12 @@
 			"3": "Costeri A. F.",
 			"4": "Cossu G.",
 			"5": "Pisanu R."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^E": {
+	"4E": {
 		"lun": {
 			"1": "Porcu D. - Tendas M.",
 			"2": "Porcu D. - Tendas M.",
@@ -1314,9 +1395,12 @@
 			"3": "Di Cesare F.",
 			"4": "Porcu D. - Tendas M.",
 			"5": "Porcu D. - Tendas M."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^F": {
+	"4F": {
 		"lun": {
 			"1": "Flore M. A.",
 			"2": "Flore M. A.",
@@ -1363,9 +1447,12 @@
 			"3": "Serra M. L.",
 			"4": "Motzo G.",
 			"5": "Costa V."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"4^I": {
+	"4I": {
 		"lun": {
 			"1": "Cacciatori A.",
 			"2": "Serra L. (suppl. Erca. M.)",
@@ -1409,9 +1496,12 @@
 			"3": "Serra L. (suppl. Erca. M.)",
 			"4": "Incollu M.",
 			"5": "Incollu M."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^A": {
+	"5A": {
 		"lun": {
 			"1": "Iacobini S.",
 			"2": "Iacobini S.",
@@ -1455,9 +1545,12 @@
 			"3": "Melis M.",
 			"4": "Iacobini S. - Murru P.",
 			"5": "Iacobini S. - Murru P."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^B": {
+	"5B": {
 		"lun": {
 			"1": "Secchi D.",
 			"2": "Nonne V.",
@@ -1501,9 +1594,12 @@
 			"3": "Paddeu F. - Sanna M.",
 			"4": "Lai D. - Satta G.",
 			"5": "Lai D. - Satta G."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^C": {
+	"5C": {
 		"lun": {
 			"1": "Nonne V.",
 			"2": "Cidda C.",
@@ -1547,9 +1643,12 @@
 			"3": "Secchi D.",
 			"4": "Guiso M.",
 			"5": "Cidda C."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^D": {
+	"5D": {
 		"lun": {
 			"1": "Ladu G.",
 			"2": "Costeri A. F.",
@@ -1593,9 +1692,12 @@
 			"3": "Cossu G.",
 			"4": "Pisanu R.",
 			"5": "Costeri A. F."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^E": {
+	"5E": {
 		"lun": {
 			"1": "Fara G.",
 			"2": "Floris M. A.",
@@ -1642,9 +1744,12 @@
 			"3": "Cucca E.",
 			"4": "Cucca E.",
 			"5": "Monni S."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^F": {
+	"5F": {
 		"lun": {
 			"1": "Clausi M.",
 			"2": "Cacciatori A.",
@@ -1691,9 +1796,12 @@
 			"3": "Monni S.",
 			"4": "Vinci E.",
 			"5": "Floris M. A."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	},
-	"5^G": {
+	"5G": {
 		"lun": {
 			"1": "Floris M. A.",
 			"2": "Clausi M.",
@@ -1740,6 +1848,9 @@
 			"3": "Corsi F.",
 			"4": "Laria L.",
 			"5": "Vinci E."
+		},
+		"dom": {
+			"1": "E' domenica!"
 		}
 	}
 }

@@ -8,7 +8,7 @@ import logging
 
 from botScripts.dataHandler import DataHandler, is_class_supported
 
-VERSION = "0.3.1beta"
+VERSION = "0.4.0beta"
 OWNERID = 6089716018
 HELPCOMMAND = "/help"
 TODAYCLASSES = "/buongiorno"
@@ -75,7 +75,8 @@ async def command_handler(message: aio_types.Message):
                 f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n\n"
                 f"{GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
                 f"i giorni vanno abbreviati alle loro prime 3 lettere.\n"
-                f"Es. {GETCLASSESFORDAY} lun\n\n"
+                f"Es. {GETCLASSESFORDAY} lun\n"
+                f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verra mostrato l'orario per quella classe.\n\n"
                 f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
                 f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
                 f"Attualmente la versione del mio codice è {VERSION}")
@@ -97,7 +98,7 @@ async def command_handler(message: aio_types.Message):
               f"Non riesco a trovare a che classe fai parte O.o\n"
               f"fai {SETCLASS} seguito dalla tua classe per impostarla\n")
 
-    # Se la classe del utente è supportata E ha eseguito un comando in GETCLASSESCOMMAND
+    # Se la classe del utente non è supportata E ha eseguito un comando in GETCLASSESCOMMAND
     elif not is_class_supported(userClass) and (user_message in GETCLASSESCOMANDS):
         text = (f"Scusa ma non ho l'orario per la tua classe.\n"
                 f" Manda un messaggio a Cristian(@matem817) per aggiungerla!")
@@ -116,15 +117,16 @@ async def command_handler(message: aio_types.Message):
     elif user_message == GETCLASSESFORDAY:
         if len(commandArgs) > 1:
             day = commandArgs[1]
+            if len(commandArgs) > 2 and is_class_supported(commandArgs[2].upper()):
+                class_=commandArgs[2].upper()
+            else: class_=userClass
             dayNum, fullDayName = orario.get_day_from_string(day)
             if  dayNum != -1:
-                text = (f"L'orario per {fullDayName} è:\n"
-                        f"{orario.get_for_day(userClass, dayNum)}")
+                text = (f"L'orario della {class_} per {fullDayName} è:\n"
+                        f"{orario.get_for_day(class_, dayNum)}")
             else:
                 text = (f"Il giorno inserito non sembra essere valido. u.u\n"
                         f"I giorni della settimana vanno abbreviati alle prime 3 lettere. :3\n")
-
-
         else:
             text = (f"La sintassi del comando sembra essere sbagliata. x-x\n"
                     f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer...>\n"
