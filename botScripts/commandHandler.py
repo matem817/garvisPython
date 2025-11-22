@@ -2,26 +2,17 @@ import datetime
 
 import aiogram.types as aio_types
 from aiogram.types import FSInputFile
-
 import botScripts.orario as orario
 import logging
+from resources.constants import Commands as cmd
 
-from botScripts.dataHandler import DataHandler, is_class_supported
-
-VERSION = "0.4.0beta"
-OWNERID = 6089716018
-HELPCOMMAND = "/help"
-TODAYCLASSES = "/buongiorno"
-TOMORROWCLASSES = "/orariodomani"
-STARTCOMMAND = "/start"
-ADMINGETLOGS = "/getlogs"
-SETCLASS = "/ic"
-GETCLASSESFORDAY = "/orarioper"
-GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
+from botScripts.classDataHandler import ClassDataHandler, is_class_supported, is_user_admin
+VERSION = "0.4.1beta"
+GETCLASSESCOMANDS = [cmd.TODAYCLASSES, cmd.TOMORROWCLASSES, cmd.GETCLASSESFORDAY]
 
 logger = logging.getLogger(__name__)
 
-dH = DataHandler()
+dH = ClassDataHandler()
 getClass = dH.get_user_class
 
 
@@ -42,13 +33,14 @@ async def command_handler(message: aio_types.Message):
     today = datetime.datetime.today().weekday()
 
     logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{commandArgs}\n")
+    isAdmin=is_user_admin(message.chat.id)
 
     # Se l'utente ha eseguito /ic
-    if user_message == SETCLASS:
+    if user_message == cmd.SETCLASS:
         if len(commandArgs) != 2:
             text=(
                 f"Sembra che tu non abbia inserito il comando correttamente. .-.\n"
-                f"Andrebbe scritto così: {SETCLASS} 3C\n"
+                f"Andrebbe scritto così: {cmd.SETCLASS} 3C\n"
                 f"Ti consiglio di scriverlo a mano!\n"
             )
         else:
@@ -66,24 +58,24 @@ async def command_handler(message: aio_types.Message):
                 text= f"Sembra che tu abbia inserito un valore non valido :/\n"
 
     # Se l'utente ha eseguito /start o /help
-    elif  user_message == HELPCOMMAND or user_message == STARTCOMMAND:
+    elif  user_message == cmd.HELPCOMMAND or user_message == cmd.STARTCOMMAND:
         text = (f"Ciao {user_fullname}!\n"
                 f"Io sono Garvis, un bot ideato e programmato da Cristian (@matem817)\n"
                 f"I comandi che supporto sono:\n"
-                f"{HELPCOMMAND} : mostra questo messaggio\n\n"
-                f"{TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n\n"
-                f"{TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n\n"
-                f"{GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
+                f"{cmd.HELPCOMMAND} : mostra questo messaggio\n\n"
+                f"{cmd.TODAYCLASSES} : mostra i prof. che avrai in orario oggi\n\n"
+                f"{cmd.TOMORROWCLASSES} : mostra i prof. che avrai in orario domani\n\n"
+                f"{cmd.GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
                 f"i giorni vanno abbreviati alle loro prime 3 lettere.\n"
-                f"Es. {GETCLASSESFORDAY} lun\n"
-                f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verra mostrato l'orario per quella classe.\n\n"
-                f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
-                f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
+                f"Es. {cmd.GETCLASSESFORDAY} lun\n"
+                f"Se invece specifichi anche la classe (es. {cmd.GETCLASSESFORDAY} lun 3c) verra mostrato l'orario per quella classe.\n\n"
+                f"{cmd.SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
+                f"Andrebbe usato così: {cmd.SETCLASS} <la tua classe>\n\n"
                 f"Attualmente la versione del mio codice è {VERSION}")
 
     # Se l'utente chiede i logs (/getlogs)
-    elif user_message == ADMINGETLOGS:
-        if message.chat.id == OWNERID:
+    elif user_message == cmd.ADMINGETLOGS:
+        if isAdmin:
             logs = FSInputFile("resources/garvisLog.log")
             logging.info(f"DOCUMENT SENT:\n{userinfo} << \n resources/garvisLog.log \n----------ENDMSG----------\n")
             await message.answer_document(logs)

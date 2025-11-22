@@ -4,7 +4,7 @@ import gc
 weekDay = ["lun","mar","mer","gio","ven", "sab","dom"]
 fullWeekDay = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
 
-with open("resources/orario.json") as f:
+with open("resources/data/orario.json") as f:
     orarioJson = json.loads(f.read())
 
 def get_day_from_string(day: str) -> tuple[int,str]:
