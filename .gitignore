@@ -1,4 +1,5 @@
 /resources/garvisLog.log
 /resources/userClasses.json
-/botScripts/__pycache__/
-/resources/__pycache__/
+/botScripts/__pycache__
+/resources/constants/__pycache__
+
