@@ -71,6 +71,8 @@ async def command_handler(message: aio_types.Message):
                 f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verra mostrato l'orario per quella classe.\n\n"
                 f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
                 f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
+                f"Se vuoi ricevere notifiche sui nuovi aggiornamenti del mio codice entra in questo canale:\n"
+                f"https://t.me/+USfaUkiGmkBlZGJk\n"
                 f"Attualmente la versione del mio codice è {VERSION}")
 
     # Se l'utente chiede i logs (/getlogs)
