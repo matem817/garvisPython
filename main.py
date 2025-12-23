@@ -9,7 +9,7 @@ from botScripts.commandHandler import command_handler
 
 ownerChatId = 6089716018
 
-botToken = input("Inserisci token del bot:") or "8459775452:AAHj_MFCH3SKcWSZ3ZnPlW6IeqaBGcjyRhU"
+botToken = input("Inserisci token del bot:")
 
 session = AiohttpSession()
 
