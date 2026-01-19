@@ -1,15 +1,26 @@
 import pathlib as pl
 
+#####FOLDERS#####
+
 PROJECTDIR = pl.Path(__file__).parent.resolve()
 LAUNCERDIR = PROJECTDIR / "launcher"
 
 RESOURCEDIR = PROJECTDIR / "resources"
 
-DATAFOLDER = RESOURCEDIR / "data"
-USERSDATAFOLDER = RESOURCEDIR / "users"
+CONSTANTSDIR = RESOURCEDIR / "constants"
 
+DATAFOLDER = RESOURCEDIR / "data"
+LOGSFOLDER = RESOURCEDIR / "logs"
+USERSDATAFOLDER = RESOURCEDIR / "usersData"
+
+#####FILES#####
 SETTINGSFILE = LAUNCERDIR / "settings.json"
 
+ORARIO = DATAFOLDER / "orario.json"
+SUPPORTEDCLASSES = DATAFOLDER / "supportedClasses.json"
+
+ADMINLIST = USERSDATAFOLDER / "adminList.json"
+USERCLASSES = USERSDATAFOLDER / "userClasses.json"
 
 
 if __name__ == '__main__':

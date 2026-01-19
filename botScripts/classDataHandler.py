@@ -1,26 +1,22 @@
 import json
 import logging
 import os
-
-USERSDATAFOLDER= "resources/usersData"
-DATAFOLDER= "resources/data"
+from filepaths import USERCLASSES, ADMINLIST, SUPPORTEDCLASSES
 
 class ClassDataHandler:
-    FILE_PATH = USERSDATAFOLDER + "/userClasses.json"
     def __init__(self):
         self.usersClassesJson = None
-        if not os.path.exists(self.FILE_PATH):
-            with open(self.FILE_PATH, "w") as f:
+        if not os.path.exists(USERCLASSES):
+            with open(USERCLASSES, "w") as f:
                 json.dump({}, f)
-
         self.load_data()
 
     def load_data(self):
-        with open(self.FILE_PATH, "r") as f:
+        with open(USERCLASSES, "r") as f:
             try:
                 self.usersClassesJson = json.load(f)
             except json.JSONDecodeError:
-                logging.error(f"{self.FILE_PATH} Corrupted!!!!!")
+                logging.error(f"{USERCLASSES} Corrupted!!!!!")
                 self.usersClassesJson = {}
 
     def get_user_class(self, userChatId: int):
@@ -30,48 +26,22 @@ class ClassDataHandler:
         userChatId = str(userChatId)
         self.usersClassesJson[userChatId] = userClass.upper()
 
-        with open(self.FILE_PATH, "w") as f:
+        with open(USERCLASSES, "w") as f:
             json.dump(self.usersClassesJson, f, indent=4)
 
-class NotificationDataHandler:
-    FILE_PATH = USERSDATAFOLDER + "/subscriberList.json"
-
-    def __init__(self):
-        self.subscribersList: list[int] = []
-        if not os.path.exists(self.FILE_PATH):
-            with open(self.FILE_PATH, "w") as f:
-                json.dump({}, f)
-        self.load_data()
-
-    def load_data(self):
-        with open(self.FILE_PATH, "r") as f:
-            try:
-                self.subscribersList = json.load(f)
-            except json.JSONDecodeError:
-                logging.error(f"{self.FILE_PATH} Corrupted!!!!!")
-                self.subscribersList = []
-
-    def get_subscriber_list(self) -> list[int]:
-        return self.subscribersList
-
-    def add_subscriber(self, _subId) -> None:
-        self.subscribersList.append(_subId)
-        with open(self.FILE_PATH, "w") as f:
-            json.dump(self.subscribersList, f, indent=4)
-
 def is_class_supported(userClass: str):
-    with open(DATAFOLDER + "/supportedClasses.json") as f:
-        supportedClasses = json.load(f)
-        if userClass in supportedClasses:
+    with open(SUPPORTEDCLASSES) as f:
+        supported_classes = json.load(f)
+        if userClass in supported_classes:
             return True
         else:
             return False
 
 def is_user_admin(userId: int) -> bool:
-    with open(USERSDATAFOLDER + "/adminList.json") as f:
-        supportedClasses = json.load(f)
+    with open(ADMINLIST) as f:
+        admin_list = json.load(f)
         admin=False
-        for i in supportedClasses:
+        for i in admin_list:
             admin= admin or int(i) == userId
         return admin
 

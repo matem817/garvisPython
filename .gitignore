@@ -2,3 +2,4 @@
 /botScripts/__pycache__
 /resources/constants/__pycache__
 /resources/logs/*
+/resources/usersData/userClasses.json
