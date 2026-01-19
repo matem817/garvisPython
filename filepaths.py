@@ -24,4 +24,4 @@ USERCLASSES = USERSDATAFOLDER / "userClasses.json"
 
 
 if __name__ == '__main__':
-    raise Exception("This file is only for providing paths to other scripts it should never be run")
+    raise RuntimeError("This file is only for providing paths to other scripts it should never be run")

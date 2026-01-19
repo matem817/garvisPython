@@ -38,6 +38,9 @@ def is_class_supported(user_class: str):
             return False
 
 def is_user_admin(user_id: int) -> bool:
+    if not os.path.exists(ADMINLIST):
+        with open(ADMINLIST, "w") as f:
+            json.dump([], f)
     with open(ADMINLIST) as f:
         admin_list = json.load(f)
         admin=False
@@ -46,7 +49,5 @@ def is_user_admin(user_id: int) -> bool:
         return admin
 
 if __name__ == "__main__":
-    handler = ClassDataHandler()
-    handler.set_user_class(500, "5f")
-    print(handler.get_user_class(500))
+    raise RuntimeError("This file is only for providing class data handling to other scripts it should never be run")
 

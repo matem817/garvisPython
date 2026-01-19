@@ -141,3 +141,5 @@ async def command_handler(message: aio_types.Message):
     logging.info(f"MESSAGE SENT:\n{userinfo} << \n{text}\n----------ENDMSG----------\n")
     await message.answer(text)
 
+if __name__ == "__main__":
+    raise RuntimeError("This file is only for providing command handling to other scripts it should never be run")

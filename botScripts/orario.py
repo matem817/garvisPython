@@ -1,6 +1,5 @@
 import json
 from logging import exception
-
 from filepaths import ORARIO
 
 weekDay = ["lun", "mar", "mer", "gio", "ven", "sab", "dom"]
@@ -27,4 +26,4 @@ def get_for_day(class_: str, day: int) -> str:
 
 
 if __name__ == "__main__":
-    raise exception("Do not run this file directly!")
+    raise RuntimeError("Do not run this file directly!")
