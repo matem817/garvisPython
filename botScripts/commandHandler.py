@@ -30,7 +30,7 @@ async def command_handler(message: aio_types.Message):
     today = datetime.datetime.today().weekday()
 
     logging.info(f"MESSAGE RECIVED:\n{userinfo} >> \n{message.text}\n----------ENDMSG----------\nAFTER ELABORATION:{command_args}\n")
-    is_admin=is_user_admin(message.chat.id)
+    is_admin= is_user_admin(message.chat.id)
 
     # Se l'utente ha eseguito /ic
     if user_message == SETCLASS:

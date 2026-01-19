@@ -19,30 +19,30 @@ class ClassDataHandler:
                 logging.error(f"{USERCLASSES} Corrupted!!!!!")
                 self.usersClassesJson = {}
 
-    def get_user_class(self, userChatId: int):
-        return self.usersClassesJson.get(str(userChatId), False)
+    def get_user_class(self, user_chat_id: int):
+        return self.usersClassesJson.get(str(user_chat_id), False)
 
-    def set_user_class(self, userChatId: int, userClass: str):
-        userChatId = str(userChatId)
-        self.usersClassesJson[userChatId] = userClass.upper()
+    def set_user_class(self, user_chat_id: int, user_class: str):
+        user_chat_id = str(user_chat_id)
+        self.usersClassesJson[user_chat_id] = user_class.upper()
 
         with open(USERCLASSES, "w") as f:
             json.dump(self.usersClassesJson, f, indent=4)
 
-def is_class_supported(userClass: str):
+def is_class_supported(user_class: str):
     with open(SUPPORTEDCLASSES) as f:
         supported_classes = json.load(f)
-        if userClass in supported_classes:
+        if user_class in supported_classes:
             return True
         else:
             return False
 
-def is_user_admin(userId: int) -> bool:
+def is_user_admin(user_id: int) -> bool:
     with open(ADMINLIST) as f:
         admin_list = json.load(f)
         admin=False
         for i in admin_list:
-            admin= admin or int(i) == userId
+            admin= admin or int(i) == user_id
         return admin
 
 if __name__ == "__main__":
