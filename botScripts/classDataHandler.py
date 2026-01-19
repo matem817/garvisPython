@@ -59,7 +59,6 @@ class NotificationDataHandler:
         with open(self.FILE_PATH, "w") as f:
             json.dump(self.subscribersList, f, indent=4)
 
-
 def is_class_supported(userClass: str):
     with open(DATAFOLDER + "/supportedClasses.json") as f:
         supportedClasses = json.load(f)
@@ -67,14 +66,14 @@ def is_class_supported(userClass: str):
             return True
         else:
             return False
+
 def is_user_admin(userId: int) -> bool:
     with open(USERSDATAFOLDER + "/adminList.json") as f:
         supportedClasses = json.load(f)
-        if userId in supportedClasses:
-            return True
-        else:
-            return False
-
+        admin=False
+        for i in supportedClasses:
+            admin= admin or int(i) == userId
+        return admin
 
 if __name__ == "__main__":
     handler = ClassDataHandler()
