@@ -7,6 +7,7 @@ import aiogram.types as aio_types
 from aiogram.client.session.aiohttp import AiohttpSession
 from botScripts.commandHandler import command_handler
 import launcher.settingParser as sP
+from filepaths import LOGSFOLDER
 
 botToken=sP.ReadSettings().token
 if botToken is None:
@@ -29,7 +30,7 @@ if __name__ == "__main__":
                         format='%(asctime)s | %(filename)s | %(levelname)s: %(message)s',
                         handlers = [
                             logging.StreamHandler(sys.stdout),  # Log su stdout
-                            logging.FileHandler(f"resources/garvisLog{datetime.datetime.today().date()}.log", mode="a", encoding="utf-8")
+                            logging.FileHandler(f"{LOGSFOLDER}/garvisLog{datetime.datetime.today().date()}.log", mode="a", encoding="utf-8")
                         ]
                     )
     asyncio.run(main())
