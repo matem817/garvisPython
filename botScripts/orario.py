@@ -1,5 +1,4 @@
 import json
-import gc
 from logging import exception
 
 from filepaths import ORARIO
