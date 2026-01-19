@@ -8,9 +8,10 @@ from aiogram.client.session.aiohttp import AiohttpSession
 from botScripts.commandHandler import command_handler
 import launcher.settingParser as sP
 
-ownerChatId = 6089716018
-
-botToken = input("Inserisci token del bot:")
+botToken=sP.ReadSettings().token
+if botToken is None:
+    botToken=input("Enter bot token: ")
+    sP.write_setting("token", botToken)
 
 session = AiohttpSession()
 dispatcher = aiogram.Dispatcher()
