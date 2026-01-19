@@ -41,16 +41,16 @@ async def command_handler(message: aio_types.Message):
                 f"Ti consiglio di scriverlo a mano!\n"
             )
         else:
-            userClass_ = command_args[1]
-            userClassCharList = list(userClass_)
+            user_class_ = command_args[1]
+            user_class_char_list = list(user_class_)
 
-            logging.debug(userClassCharList)
+            logging.debug(user_class_char_list)
 
-            if userClassCharList[0].isnumeric() and not userClassCharList[1].isnumeric() :
-                userClass_ = userClassCharList[0] + userClassCharList[1]
-                text= f"Ok! La tua classe è stata impostata su {userClass_}\n"
-                logging.info(f"{userinfo} class has been set to {userClass_}")
-                dH.set_user_class(message.chat.id, userClass_)
+            if user_class_char_list[0].isnumeric() and not user_class_char_list[1].isnumeric() :
+                user_class_ = user_class_char_list[0] + user_class_char_list[1]
+                text= f"Ok! La tua classe è stata impostata su {user_class_}\n"
+                logging.info(f"{userinfo} class has been set to {user_class_}")
+                dH.set_user_class(message.chat.id, user_class_)
             else:
                 text= f"Sembra che tu abbia inserito un valore non valido :/\n"
 
@@ -113,10 +113,10 @@ async def command_handler(message: aio_types.Message):
             if len(command_args) > 2 and is_class_supported(command_args[2].upper()):
                 class_=command_args[2].upper()
             else: class_=user_class
-            dayNum, fullDayName = orario.get_day_from_string(day)
-            if  dayNum != -1:
-                text = (f"L'orario della {class_} per {fullDayName} è:\n"
-                        f"{orario.get_for_day(class_, dayNum)}")
+            day_num, full_day_name = orario.get_day_from_string(day)
+            if  day_num != -1:
+                text = (f"L'orario della {class_} per {full_day_name} è:\n"
+                        f"{orario.get_for_day(class_, day_num)}")
             else:
                 text = (f"Il giorno inserito non sembra essere valido. u.u\n"
                         f"I giorni della settimana vanno abbreviati alle prime 3 lettere. :3\n")
