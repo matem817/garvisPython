@@ -1,5 +1,4 @@
 import json
-from logging import exception
 from filepaths import ORARIO
 
 weekDay = ["lun", "mar", "mer", "gio", "ven", "sab", "dom"]

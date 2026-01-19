@@ -1,5 +1,6 @@
 import json
 import filepaths as fp
+
 class ReadSettings:
     def __init__(self):
         if not fp.SETTINGSFILE.exists():

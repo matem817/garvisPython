@@ -1,12 +1,11 @@
 import datetime
-
 import aiogram.types as aio_types
 from aiogram.types import FSInputFile
 import botScripts.orario as orario
 import logging
 from resources.constants.commands import *
-
 from botScripts.classDataHandler import ClassDataHandler, is_class_supported, is_user_admin
+
 VERSION = "0.5.0beta"
 GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
 
