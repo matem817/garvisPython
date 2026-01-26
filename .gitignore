@@ -1,2 +1,7 @@
-/resources/garvisLog.log
 /resources/userClasses.json
+/botScripts/__pycache__
+/resources/constants/__pycache__
+
+/resources/logs/*
+/resources/usersData/*
+/launcher/settings.json
