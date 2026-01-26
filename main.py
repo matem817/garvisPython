@@ -14,7 +14,7 @@ if botToken is None:
     botToken=input("Enter bot token: ")
     sP.write_setting("token", botToken)
 else:
-    print("Bot Token is set in settings, to change it modify launcher\\settings.json: \"token\": \"\"")
+    print("Bot Token is set in settings, to change it modify launcher\\settings.json: \"token\": \"<YOUR TOKEN>\"")
 
 session = AiohttpSession()
 dispatcher = aiogram.Dispatcher()
