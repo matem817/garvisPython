@@ -124,11 +124,6 @@ async def command_handler(message: aio_types.Message):
                     f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer...>\n"
                     f"es.: {GETCLASSESFORDAY} lun\n")
 
-    elif user_message == "gayfrfr":
-        text=(
-            f"Ciao Stefano, ecco l'orario della tua classe ;D\n"
-            f"{orario.get_for_day("2F",today)}"
-        )
     # Se l'utente ha scritto gibberish
     else:
         text = (
