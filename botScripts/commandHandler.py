@@ -6,7 +6,7 @@ import logging
 from resources.constants.commands import *
 from botScripts.classDataHandler import ClassDataHandler, is_class_supported, is_user_admin
 
-VERSION = "0.5.0beta"
+VERSION = "0.6.0beta"
 GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
 
 logger = logging.getLogger(__name__)
@@ -15,16 +15,14 @@ dH = ClassDataHandler()
 getClass = dH.get_user_class
 
 async def command_handler(message: aio_types.Message):
-    raw = (message.text or "").strip().lower()
-    command_args = raw.split()
+    command_args = (message.text or "").strip().lower().split()
 
     first_token = command_args[0]  # "/help@MyBot" oppure "/help"
     user_message = first_token.split("@", 1)[0]
 
-    user_fullname = message.chat.full_name
     user_name = message.chat.first_name
     user_class = dH.get_user_class(message.chat.id)
-    userinfo = f"{user_fullname}({message.chat.id})[{user_class or None}]"
+    userinfo = f"{message.chat.full_name}({message.chat.id})[{user_class or None}]"
 
     today = datetime.datetime.today().weekday()
 
@@ -56,7 +54,7 @@ async def command_handler(message: aio_types.Message):
     # Se l'utente ha eseguito /start o /help
     elif  user_message == HELPCOMMAND or user_message == STARTCOMMAND:
         text = (
-                f"Ciao {user_fullname}!\n"
+                f"Ciao {message.chat.full_name}!\n"
                 f"Io sono Garvis, un bot ideato e programmato da Cristian (@matem817)\n"
                 f"I comandi che supporto sono:\n"
                 f"{HELPCOMMAND} : mostra questo messaggio\n\n"
@@ -65,7 +63,7 @@ async def command_handler(message: aio_types.Message):
                 f"{GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
                 f"i giorni vanno abbreviati alle loro prime 3 lettere.\n"
                 f"Es. {GETCLASSESFORDAY} lun\n"
-                f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verra mostrato l'orario per quella classe.\n\n"
+                f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verrà mostrato l'orario per quella classe.\n\n"
                 f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
                 f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
                 f"Se vuoi ricevere notifiche sui nuovi aggiornamenti del mio codice entra in questo canale:\n"
@@ -124,11 +122,6 @@ async def command_handler(message: aio_types.Message):
                     f"Andrebbe usato così: {GETCLASSESFORDAY} <lun, mar, mer...>\n"
                     f"es.: {GETCLASSESFORDAY} lun\n")
 
-    elif user_message == "gayfrfr":
-        text=(
-            f"Ciao Stefano, ecco l'orario della tua classe ;D\n"
-            f"{orario.get_for_day("2F",today)}"
-        )
     # Se l'utente ha scritto gibberish
     else:
         text = (
