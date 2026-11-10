@@ -15,16 +15,14 @@ dH = ClassDataHandler()
 getClass = dH.get_user_class
 
 async def command_handler(message: aio_types.Message):
-    raw = (message.text or "").strip().lower()
-    command_args = raw.split()
+    command_args = (message.text or "").strip().lower().split()
 
     first_token = command_args[0]  # "/help@MyBot" oppure "/help"
     user_message = first_token.split("@", 1)[0]
 
-    user_fullname = message.chat.full_name
     user_name = message.chat.first_name
     user_class = dH.get_user_class(message.chat.id)
-    userinfo = f"{user_fullname}({message.chat.id})[{user_class or None}]"
+    userinfo = f"{message.chat.full_name}({message.chat.id})[{user_class or None}]"
 
     today = datetime.datetime.today().weekday()
 
@@ -56,7 +54,7 @@ async def command_handler(message: aio_types.Message):
     # Se l'utente ha eseguito /start o /help
     elif  user_message == HELPCOMMAND or user_message == STARTCOMMAND:
         text = (
-                f"Ciao {user_fullname}!\n"
+                f"Ciao {message.chat.full_name}!\n"
                 f"Io sono Garvis, un bot ideato e programmato da Cristian (@matem817)\n"
                 f"I comandi che supporto sono:\n"
                 f"{HELPCOMMAND} : mostra questo messaggio\n\n"
