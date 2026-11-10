@@ -6,7 +6,7 @@ import logging
 from resources.constants.commands import *
 from botScripts.classDataHandler import ClassDataHandler, is_class_supported, is_user_admin
 
-VERSION = "0.5.0beta"
+VERSION = "0.6.0beta"
 GETCLASSESCOMANDS = [TODAYCLASSES, TOMORROWCLASSES, GETCLASSESFORDAY]
 
 logger = logging.getLogger(__name__)
