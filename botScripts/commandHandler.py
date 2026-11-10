@@ -63,7 +63,7 @@ async def command_handler(message: aio_types.Message):
                 f"{GETCLASSESFORDAY} : mostra l'orario che avrai in un gioano che specifichi tu\n"
                 f"i giorni vanno abbreviati alle loro prime 3 lettere.\n"
                 f"Es. {GETCLASSESFORDAY} lun\n"
-                f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verra mostrato l'orario per quella classe.\n\n"
+                f"Se invece specifichi anche la classe (es. {GETCLASSESFORDAY} lun 3c) verrà mostrato l'orario per quella classe.\n\n"
                 f"{SETCLASS} : imposta la classe a cui fai parte in modo che ti possa dare l'orario corretto\n"
                 f"Andrebbe usato così: {SETCLASS} <la tua classe>\n\n"
                 f"Se vuoi ricevere notifiche sui nuovi aggiornamenti del mio codice entra in questo canale:\n"
